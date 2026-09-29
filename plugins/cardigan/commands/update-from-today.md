@@ -12,8 +12,10 @@ Before drafting, read list_changes and list_proposals, so you draft nothing that
 
 Then send ONE round with propose_changes: new cards, moves, dates, people and comments, each tied to what prompted it, with a one-line summary. People go on a card as its assignees, by the ids list_members gives.
 
+Before moving a card, read list_projects for its board: each project has its own columns, and some are named their own way (Working, Backlog). Move a card only to a column its project has, and map my words to the closest one.
+
 Work cheaply: every answer comes out of my own AI plan, so read only what you need and open a card only when a line needs explaining.
 
-Tell me in two or three lines what you drafted. It waits for me in Cardigan.
+Tell me in two or three lines what you drafted, and whether it waits for me in Cardigan or went through on its own, as the reply said.
 
 Anything I added after the command: $ARGUMENTS

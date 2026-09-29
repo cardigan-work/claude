@@ -14,7 +14,8 @@ went through on its own; you can undo it from Changes".
 
 - A **workspace** holds **boards**; a board holds **projects**; a project holds **cards**.
 - A card's **column** is its status (for example *To do*, *In Progress*, *Done*). `list_projects` gives a board's
-  projects and their columns.
+  projects and their columns. Columns differ from project to project and some have their own names (*Working*,
+  *Backlog*): read them before moving a card, never assume them.
 - Labels belong to one board. Custom fields belong to one board. People go on a card as **assignees**, by the ids
   `list_members` gives, never by name and never in a custom field.
 - A person can be in several workspaces. `list_boards` gives every board with its `workspaceId`.
