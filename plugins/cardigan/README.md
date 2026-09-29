@@ -6,8 +6,9 @@ work with it well.
 
 ## What it does
 
-- **Connects Claude to Cardigan.** After you install it, connect *Cardigan* on the package's Connectors tab and sign
-  in to your Cardigan account. There is no key or password to copy.
+- **Connects Claude to Cardigan.** Already connected with Cardigan's address? Keep that connection: these guides use
+  it, and the package's own *Cardigan* entry needs no connecting. Otherwise, connect *Cardigan* on the package's
+  Connectors tab and sign in to your Cardigan account. There is no key or password to copy.
 - **Teaches Claude how Cardigan works:** how to catch up cheaply on what changed, how to draft updates as one round,
   and how to work through the to-dos you give it in Cardigan and close each one.
 - **Keeps your boards current on its own, if you want.** Ask Claude to *keep Cardigan up to date* and it sets up a
