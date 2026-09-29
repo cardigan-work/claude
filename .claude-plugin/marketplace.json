@@ -1,0 +1,12 @@
+{
+  "name": "cardigan",
+  "description": "The Cardigan package for Claude.",
+  "owner": { "name": "Cardigan", "url": "https://cardigan.work" },
+  "plugins": [
+    {
+      "name": "cardigan",
+      "source": "./plugins/cardigan",
+      "description": "Your Cardigan boards in Claude: read them, draft updates for you to approve, work through what you asked, and keep your boards current on a schedule."
+    }
+  ]
+}

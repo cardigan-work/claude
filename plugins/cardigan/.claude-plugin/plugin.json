@@ -1,0 +1,8 @@
+{
+  "name": "cardigan",
+  "displayName": "Cardigan",
+  "description": "Your Cardigan boards in Claude: read them, draft updates for you to approve, work through what you asked Claude to do, and keep your boards current on a schedule.",
+  "author": { "name": "Cardigan", "url": "https://cardigan.work" },
+  "homepage": "https://cardigan.work",
+  "license": "MIT"
+}
