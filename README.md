@@ -11,7 +11,8 @@ schedule.
 3. Already connected to Cardigan with its address? Keep that connection: the package's guides use it, and a second
    *Cardigan* under Connectors needs no connecting. Otherwise, connect *Cardigan* there and sign in.
 
-In Claude Code: `/plugin marketplace add cardigan-work/claude`, then `/plugin install cardigan@cardigan`.
+In Claude Code: `/plugin marketplace add cardigan-work/claude`, then `/plugin install cardigan@cardigan`. The package's
+connection asks you to sign in once: type `/mcp`, choose *cardigan*, then *Authenticate*.
 
 The package itself is in [`plugins/cardigan`](plugins/cardigan). This repository is published automatically from
 Cardigan's own; changes made here directly are overwritten.
