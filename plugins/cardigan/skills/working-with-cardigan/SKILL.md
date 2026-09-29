@@ -7,7 +7,8 @@ description: How to read and update Cardigan boards for the person through the C
 
 Cardigan is the person's project board. You read it and draft changes through the Cardigan connector. **Nothing you
 draft changes a board until the person approves it in Cardigan**, unless they have let that kind of change go through
-on its own. Say so when you draft: "It waits for you in Cardigan."
+on its own. Each draft's reply says which happened: tell the person that, "It waits for you in Cardigan" or "It
+went through on its own; you can undo it from Changes".
 
 ## How Cardigan is organised
 
@@ -61,5 +62,5 @@ Every answer comes out of the person's own AI plan.
 
 ## What to tell the person
 
-Keep it short: what you drafted, in two or three lines, and that it waits for them in Cardigan. Do not paste what
-the tools returned.
+Keep it short: what you drafted, in two or three lines, and whether it waits for them in Cardigan or already went
+through, as the reply said. Do not paste what the tools returned.
