@@ -40,7 +40,8 @@ Never close a to-do you have not answered.
 
 Every answer comes out of the person's own AI plan.
 
-- To catch up, call `list_changes`. It returns only what changed since you last asked.
+- To catch up, call `list_changes`. It returns one line per card for what changed since you last asked. Pass
+  `full: true` only when you need each change on its own line.
 - For where things stand, call `read_dashboard` with `dashboardId` "standard".
 - Open a single card with `get_card` only when a line needs explaining, and use `omit` for the parts you do not need.
 - Send changes as **one** `propose_changes` round with a one-line `summary`, not many small drafts.
