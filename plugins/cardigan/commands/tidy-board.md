@@ -8,7 +8,7 @@ Find it with list_boards, then read list_cards for it.
 
 Look for cards past their due date, cards with nobody on them, cards that have not moved in two weeks, and likely duplicates.
 
-Draft ONE round with propose_changes for what is clear-cut, and list what needs my judgement instead of guessing. Never archive or delete anything; suggest it instead.
+Draft ONE round with propose_changes for what is clear-cut, and list what needs my judgment instead of guessing. Never archive or delete anything; suggest it instead.
 
 Before moving a card, read list_projects for its board: each project has its own columns, and some are named their own way (Working, Backlog). Move a card only to a column its project has, and map my words to the closest one.
 

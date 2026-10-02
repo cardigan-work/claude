@@ -10,7 +10,7 @@ draft changes a board until the person approves it in Cardigan**, unless they ha
 on its own. Each draft's reply says which happened and ends with a link to that draft in Cardigan: tell the person
 which happened and **always give them that link**, e.g. "It went through on its own. Review or undo it here: <link>".
 
-## How Cardigan is organised
+## How Cardigan is organized
 
 - A **workspace** holds **boards**; a board holds **projects**; a project holds **cards**.
 - A card's **column** is its status (for example *To do*, *In Progress*, *Done*). `list_projects` gives a board's
@@ -49,7 +49,7 @@ Every answer comes out of the person's own AI plan.
 
 ## Drafting well
 
-- **One round, tied to what prompted it.** Each change should be something the person would recognise from their
+- **One round, tied to what prompted it.** Each change should be something the person would recognize from their
   day, such as a meeting, an email or their own words.
 - **New cards** need a `projectId` and a clear title. Add a due date or assignees only when you know them.
 - **Assignees:** `update_card`'s `assigneeIds` is the exact list of who should be on the card. Only the difference is
