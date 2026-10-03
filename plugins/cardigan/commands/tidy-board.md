@@ -4,7 +4,7 @@ description: "Draft one round that tidies a board — late cards, cards with nob
 
 Tidy my Cardigan board "$ARGUMENTS".
 
-Find it with list_boards, then read list_cards for it.
+Find it with list_boards, then read list_cards for it, and list_changes for it since two weeks ago: a card with no line there has not moved.
 
 Look for cards past their due date, cards with nobody on them, cards that have not moved in two weeks, and likely duplicates.
 
