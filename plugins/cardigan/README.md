@@ -23,10 +23,10 @@ its own. You can take a whole round back later.
 
 ## What it sends
 
-Claude reads your boards and sends its drafts to Cardigan at `app.cardigan.work`, as you, through the connector you
+Claude reads your boards and sends its drafts to Cardigan at `app.getcardigan.com`, as you, through the connector you
 signed in with. Cardigan never sees your email, meetings or documents. Your AI reads those through its own
 connections. This package contains only instructions and the connector's address. It runs nothing on your computer.
 
 ## Help
 
-<https://app.cardigan.work/help/connect-your-ai>
+<https://app.getcardigan.com/help/connect-your-ai>

@@ -1,7 +1,7 @@
 {
   "name": "cardigan",
   "description": "The Cardigan package for Claude.",
-  "owner": { "name": "Cardigan", "url": "https://cardigan.work" },
+  "owner": { "name": "Cardigan", "url": "https://getcardigan.com" },
   "plugins": [
     {
       "name": "cardigan",
