@@ -8,6 +8,6 @@ Read list_changes first: one line for each card that changed since you last aske
 
 Work cheaply: every answer comes out of my own AI plan, so read only what you need and open a card only when a line needs explaining.
 
-Tell me in a few short lines: what changed and who changed it, what is late or due this week, and what waits on me. Draft nothing.
+Tell me in a few short lines: what changed and who changed it, what is late or due this week, what is now ready to start, and what waits on me. Draft nothing.
 
 Anything I added after the command: $ARGUMENTS

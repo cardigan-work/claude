@@ -12,6 +12,8 @@ Before drafting, read list_changes and list_proposals, so you draft nothing that
 
 Then send ONE round with propose_changes: new cards, moves, dates, people and comments, each tied to what prompted it, with a one-line summary. People go on a card as its assignees, by the ids list_members gives.
 
+When something can't start until other work is done, make its card wait on that card in the same round: card.link with kind waits_on.
+
 Before moving a card, read list_projects for its board: each project has its own columns, and some are named their own way (Working, Backlog). Move a card only to a column its project has, and map my words to the closest one.
 
 Work cheaply: every answer comes out of my own AI plan, so read only what you need and open a card only when a line needs explaining.

@@ -65,6 +65,11 @@ Every answer comes out of the person's own AI plan.
 - **New cards** need a `projectId` and a clear title. Add a due date or assignees only when you know them.
 - **Assignees:** `update_card`'s `assigneeIds` is the exact list of who should be on the card. Only the difference is
   drafted, and an empty list takes everyone off.
+- **Work that waits on other work:** when a meeting, an email or the person says one thing can't start until another
+  is done, draft `card.link` with `kind: waits_on` (or `needed_for` from the other card) in the same round. The card is
+  marked on the board, and its people hear when it is ready. Use `related` for context only. A WAITING label is for
+  work held up by a person, never by another card. `get_card` shows a card's `linkedCards`; `list_cards` shows
+  `waitingOn` on a card that waits on open work.
 - **A whole new board:** draft it with `propose_board`, from a Cardigan board file, the format Cardigan's Export
   writes.
 - **A new workspace:** draft it with `propose_workspace`.
