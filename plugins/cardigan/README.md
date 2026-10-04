@@ -11,8 +11,9 @@ work with it well.
   Connectors tab and sign in to your Cardigan account. There is no key or password to copy.
 - **Teaches Claude how Cardigan works:** how to catch up cheaply on what changed, how to draft updates as one round,
   and how to work through the to-dos you give it in Cardigan and close each one.
-- **Keeps your boards current on its own, if you want.** Ask Claude to *keep Cardigan up to date* and it sets up a
-  scheduled task that checks Cardigan every hour on weekdays. Scheduled tasks need a paid Claude plan.
+- **Keeps your boards current on its own, if you want.** Ask Claude to *keep Cardigan up to date*, or say yes when it
+  offers, and it sets up a scheduled task that checks Cardigan every hour, so what you ask there is done within the
+  hour. Scheduled tasks need a paid Claude plan.
 - **Ready-made requests:** *Catch me up*, *Update my boards from today*, *Tidy a board* and *Keep up*.
 
 ## Nothing changes without you

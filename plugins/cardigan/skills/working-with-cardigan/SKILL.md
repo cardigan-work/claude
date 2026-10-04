@@ -36,6 +36,17 @@ For each to-do:
 
 Never close a to-do you have not answered.
 
+**Requests waiting, whatever you came for.** When any Cardigan answer carries `waitingRequests`, the person has asked
+you something in Cardigan that nobody has picked up yet. After finishing what they asked you now, call `list_asks` and
+work through them the same way.
+
+**Offer the hourly check when there is none.** When `list_asks` carries `hourlyCheck` with `state` "off", the person has
+no scheduled check, so what they ask in Cardigan waits for a visit like this one. After finishing what they asked,
+offer it once, in one or two lines: "Want me to check Cardigan every hour? Anything you ask there gets done within the
+hour. Each check uses a little of your plan." If they say yes, use the set-up-cardigan-keep-up skill. If they say no,
+drop it. When `state` is "stopped", tell them their hourly check has not run since `lastRunAt` and offer to look at
+it or set it up again.
+
 ## Work cheaply
 
 Every answer comes out of the person's own AI plan.

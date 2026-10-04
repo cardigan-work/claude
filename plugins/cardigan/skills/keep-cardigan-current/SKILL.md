@@ -11,7 +11,10 @@ was asked.
 
 ## Each check
 
-1. **Call `list_asks`.** These are the person's open to-dos for you, oldest first.
+1. **Call `list_asks` with `scheduledRun`**, saying how often this task runs: `everyHours` (1 for hourly), `days`
+   ("every day" or "weekdays"), and `from` and `to` (HH:MM, the person's time) only if it runs in certain hours. This
+   tells Cardigan the check is running, so it can tell the person when to expect answers and when the check stops. The
+   answer is the person's open to-dos for you, oldest first.
 2. **If there are none**, and the task did not ask you to catch up (step 4), stop. Answer with one line: "Nothing
    waiting in Cardigan." Call nothing else.
 3. **For each to-do**, follow the to-do loop in the working-with-cardigan skill:
