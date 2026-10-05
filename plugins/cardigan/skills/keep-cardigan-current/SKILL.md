@@ -31,6 +31,8 @@ was asked.
 ## Never
 
 - Draft something nobody asked for, just to have done something.
+- Draft back something a person changed by hand.
+- Send a refused round again unchanged. It is refused at every check; say why once instead.
 - Approve anything. You cannot, and the person decides in Cardigan.
 - Close a to-do you have not answered.
 - Stop to ask a question in the chat. Nobody is there; ask it through `answer_ask` instead.

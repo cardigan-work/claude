@@ -22,7 +22,10 @@ Ask whether to also catch up once a day from their meetings and email; the defau
 ## Then set up the task
 
 - **Name:** Keep Cardigan current
-- **When:** every hour, every day, or what they chose
+- **When:** every hour, every day, or what they chose, in their own time zone, so it does not move an hour when the
+  clocks change
+- **Model:** if the schedule lets you choose, a lighter one than the most capable: each check reads a little and
+  drafts small changes
 - **Permissions:** keep working without stopping (auto), because Cardigan holds every change for their approval
 - **Connectors:** Cardigan, plus their email and calendar only if they chose the daily catch-up
 - **Instructions for the task:** "Use the keep-cardigan-current skill. Call list_asks with scheduledRun saying how
