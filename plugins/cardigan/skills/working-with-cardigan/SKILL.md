@@ -24,6 +24,17 @@ which happened and **always give them that link**, e.g. "It went through on its 
   is due, late or waiting for them, and never put their real work there: removing that workspace deletes everything in
   it. For a workspace of their own, draft one with `propose_workspace`.
 
+## Setting up their first boards
+
+When the person says "Set up my Cardigan", asks you to set up their boards, or has no board of their own yet (an
+answer carries `gettingStarted`), use the start skill. In short: offer what to read (their email and calendar from the
+last two weeks, up to yesterday; their calendar only; or what they tell you), saying "Cardigan never sees your email.
+Only what you approve goes on a board."; offer a few examples for their kind of work; show what you found as *Sure*
+and *Not sure*; ask at most three questions about the gaps, and "Who needs to see where each one stands?"; then draft
+one new workspace with one board per client or strand of work, each card with a `why`, and the round with a `next`:
+their next real meeting or email. End with "Look them over in Cardigan; nothing is on a board until you approve it."
+and that moment: "After your 3 pm call with Jordan, say 'Update my boards from today'."
+
 ## Start with what the person asked you to do
 
 Before anything else, call `list_asks`. It lists the person's open to-dos for you, oldest first, each with what it is
@@ -68,7 +79,9 @@ Every answer comes out of the person's own AI plan.
 ## Drafting well
 
 - **One round, tied to what prompted it.** Each change should be something the person would recognize from their
-  day, such as a meeting, an email or their own words.
+  day, such as a meeting, an email or their own words. Give each change a `why`: where it came from, in a few words
+  ("Jordan's email, 3:40 pm"). The people who can change the board see it beside the change, and a Viewer never does.
+  When you know the person's next real meeting or email, give the round a `next` ("your 3 pm call with Jordan").
 - **New cards** need a `projectId` and a clear title. Add a due date or assignees only when you know them.
 - **Assignees:** `update_card`'s `assigneeIds` is the exact list of who should be on the card. Only the difference is
   drafted, and an empty list takes everyone off.
@@ -89,8 +102,10 @@ Every answer comes out of the person's own AI plan.
   marked on the board, and its people hear when it is ready. Use `related` for context only. A WAITING label is for
   work held up by a person, never by another card. `get_card` shows a card's `linkedCards`; `list_cards` shows
   `waitingOn` on a card that waits on open work.
-- **A whole new board:** draft it with `propose_board`, from a board file in the shape its description gives.
-- **A new workspace:** draft it with `propose_workspace`.
+- **A whole new board:** draft it with `propose_board`, from a board file in the shape its description gives. A card
+  in the file can carry its own `why`.
+- **A new workspace:** draft it with `propose_workspace`, then add its boards with `propose_board` and the
+  `workspaceId` it gave back: the person approves the workspace and its boards together.
 - **More than one workspace:** when a change names no board, such as a new board or a milestone, and the person has
   several workspaces, ask which one and pass its `workspaceId`.
 - **A round the person took back** shows `undoneAt` in `list_proposals`. Do not draft it again unless they ask.
@@ -98,5 +113,7 @@ Every answer comes out of the person's own AI plan.
 
 ## What to tell the person
 
-Keep it short: what you drafted, in two or three lines, whether it waits for them in Cardigan or already went
-through, as the reply said, and the link from the reply's last sentence, as it is. Do not paste what the tools returned.
+Keep it short: what you found and what you drafted, in plain words and a few lines ("Since your call, three things
+changed: …"), whether it waits for them in Cardigan or already went through, as the reply said, and the link from the
+reply's last sentence, as it is. Do not paste what the tools returned. After a round from their day, name the next
+real moment to update from, when you know it: "After your 3 pm call with Jordan, say 'Update my boards from today'."

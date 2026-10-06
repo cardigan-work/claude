@@ -6,7 +6,7 @@
     {
       "name": "cardigan",
       "source": "./plugins/cardigan",
-      "description": "Your Cardigan boards in Claude: read them, draft updates for you to approve, work through what you asked, and keep your boards current on a schedule."
+      "description": "Your Cardigan boards in Claude: set them up from your own work, draft updates for you to approve, work through what you asked, and keep your boards current on a schedule."
     }
   ]
 }

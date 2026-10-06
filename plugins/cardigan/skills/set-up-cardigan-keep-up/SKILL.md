@@ -39,5 +39,6 @@ change that."
 
 ## If a schedule cannot be set up here
 
-For example on a free plan, or where scheduled tasks are not offered: say so plainly. Suggest they ask "catch me up
-on Cardigan" whenever they like, and that what they ask in Cardigan waits for them until then.
+For example on a free plan, or where scheduled tasks are not offered: say so plainly. Suggest they say "Update my
+boards from today" after a meeting or email, or ask "catch me up on Cardigan" whenever they like, and that what they
+ask in Cardigan waits for them until then.

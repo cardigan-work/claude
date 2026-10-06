@@ -14,5 +14,7 @@ schedule.
 In Claude Code: `/plugin marketplace add cardigan-work/claude`, then `/plugin install cardigan@cardigan`. The package's
 connection asks you to sign in once: type `/mcp`, choose *cardigan*, then *Authenticate*.
 
+Then, in a new chat, say *Set up my Cardigan*, or type `/cardigan:start`.
+
 The package itself is in [`plugins/cardigan`](plugins/cardigan). This repository is published automatically from
 Cardigan's own; changes made here directly are overwritten.

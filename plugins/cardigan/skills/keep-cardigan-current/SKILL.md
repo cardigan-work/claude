@@ -23,8 +23,9 @@ was asked.
    - close it with `answer_ask`, with the draft's `changesetId` and one line.
    - If it is unclear, close it with a one-line question and no draft. Nobody is watching to answer you now.
 4. **Only if the task says to catch up as well:** call `list_changes`, then draft **one** round from what happened in
-   the person's other connections since the last check, such as their meetings and email. Check `list_proposals`
-   with status "waiting" first, so nothing is drafted twice.
+   the person's other connections since the last check, such as their meetings and email, each change with a `why`:
+   where it came from, in a few words ("Jordan's email, 3:40 pm"). Check `list_proposals` with status "waiting"
+   first, so nothing is drafted twice.
 5. **Finish with one line:** how many to-dos you answered and whether you drafted a round. The person reads the
    details in Cardigan.
 
