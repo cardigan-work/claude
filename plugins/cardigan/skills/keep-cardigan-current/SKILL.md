@@ -15,8 +15,8 @@ was asked.
    ("every day" or "weekdays"), and `from` and `to` (HH:MM, the person's time) only if it runs in certain hours. This
    tells Cardigan the check is running, so it can tell the person when to expect answers and when the check stops. The
    answer is the person's open to-dos for you, oldest first.
-2. **If there are none**, and the task did not ask you to catch up (step 4), stop. Answer with one line: "Nothing
-   waiting in Cardigan." Call nothing else.
+2. **If there are none**, and the task did not ask you to catch up (step 4), stop. Answer with one line: "All quiet
+   since the last check. Nothing new was asked of me." Call nothing else.
 3. **For each to-do**, follow the to-do loop in the working-with-cardigan skill:
    - read only what it is about;
    - draft the change, as one `propose_changes` round when it is more than one change;
@@ -27,7 +27,17 @@ was asked.
    where it came from, in a few words ("Jordan's email, 3:40 pm"). Check `list_proposals` with status "waiting"
    first, so nothing is drafted twice.
 5. **Finish with one line:** how many to-dos you answered and whether you drafted a round. The person reads the
-   details in Cardigan.
+   details in Cardigan. If you answered none and drafted nothing, the line is the one in step 2.
+
+## Saying it is quiet
+
+"All quiet" is a claim, so say it only when it is true:
+
+- **Only for what you read.** This check reads what the person asked of you, not late cards or changes waiting for
+  their approval, so the quiet line says nothing about those. *Catch me up* is where they are read.
+- **A failed call is never quiet.** If `list_asks` or any other call failed, say what you could not check ("Could not
+  reach Cardigan, so I could not check what you asked.") and do not call it quiet.
+- **The person's way comes first.** If they have told you how they like to be answered, use their way.
 
 ## Never
 
