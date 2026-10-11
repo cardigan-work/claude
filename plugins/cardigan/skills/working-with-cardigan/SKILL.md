@@ -120,7 +120,7 @@ Every answer comes out of the person's own AI plan.
   each Monday about what moved. If the person keeps a card for their own weekly status note to them (for example
   *Weekly status note to Jordan*), propose archiving it once: draft `card.archive` with a `why` such as "Jordan gets
   a Monday note now", and tell them in one line. It waits for their approval. If they decline it, don't draft it again.
-- **Inviting a friend to try Cardigan:** the person's own link is on Your settings › Invite a friend, in Cardigan. Ask
+- **Inviting a friend to try Cardigan:** the person's own link is on Settings › Invite a friend, in Cardigan. Ask
   them to paste it, then write the message in their own email or chat for them to send. Cardigan never sends it.
 
 ## Boards someone outside the team sees
