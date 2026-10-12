@@ -125,8 +125,8 @@ Every answer comes out of the person's own AI plan.
 
 ## Boards someone outside the team sees
 
-A board can be shared with someone outside the person's workspace, such as a client, who only looks. `list_boards`
-marks such a board `seenBy` ("Jordan Lee, who only looks"), with a `seenNote`.
+A board can be shared with a Guest, someone outside the person's workspace such as a client, who only looks. `list_boards`
+marks such a board `seenBy` ("Jordan Lee, a Guest who only looks"), with a `seenNote`.
 
 - **Every change you draft there waits for the person,** whatever they let through, and Cardigan marks it "Jordan
   will see this". Say so when you draft one.
