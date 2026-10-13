@@ -55,6 +55,12 @@ Claude reads your boards and sends its drafts to Cardigan at `app.getcardigan.co
 signed in with. Cardigan never sees your email, meetings or documents. Your AI reads those through its own
 connections. This package contains only instructions and the connector's address. It runs nothing on your computer.
 
+## Keep it current in Claude Code
+
+Claude Code keeps the copy of this package you first installed. If a command such as `/cardigan:catch-me-up` isn't
+there, type `claude plugin update cardigan@cardigan` in a terminal, then start a new session. To get each new version
+from then on, type `/plugin`, open **Marketplaces**, choose **cardigan**, then **Enable auto-update**.
+
 ## Help
 
 <https://app.getcardigan.com/help/connect-your-ai>
