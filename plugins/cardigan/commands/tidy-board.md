@@ -14,4 +14,4 @@ Before moving a card, read list_projects for its board: each project has its own
 
 Work cheaply: every answer comes out of my own AI plan, so read only what you need and open a card only when a line needs explaining.
 
-Tell me in a few lines what you drafted and what you left for me, and whether it waits for me in Cardigan or went through on its own, as the reply said.
+Tell me in a few lines what you drafted and what you left for me, and whether it is pending in Cardigan or went through on its own, as the reply said.

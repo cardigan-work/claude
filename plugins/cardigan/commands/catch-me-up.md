@@ -1,5 +1,5 @@
 ---
-description: "What changed on your Cardigan boards since your AI last looked, and what waits on you."
+description: "What changed on your Cardigan boards since your AI last looked, and what is pending."
 ---
 
 Catch me up on Cardigan.

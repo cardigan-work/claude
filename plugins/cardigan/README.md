@@ -46,7 +46,7 @@ Say one of these to Claude, or your own. The ones that read your email or calend
 
 ## Nothing changes without you
 
-Everything Claude drafts waits in Cardigan for your approval, unless you have let that kind of change go through on
+Everything Claude drafts is pending in Cardigan for your approval, unless you have let that kind of change go through on
 its own. You can take a whole round back later.
 
 ## What it sends

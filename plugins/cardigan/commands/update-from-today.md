@@ -8,7 +8,7 @@ Go through what happened since my boards were last brought up to date: since the
 
 First read list_asks: what I asked you to do comes first, and close each with answer_ask once it is drafted.
 
-Before drafting, read list_changes and list_proposals, so you draft nothing that is already on a board or already waiting for me.
+Before drafting, read list_changes and list_proposals, so you draft nothing that is already on a board or already pending.
 
 Then send ONE round with propose_changes: new cards, moves, dates, people and comments, with a one-line summary. Give each change a why: where it came from, in a few words ("Jordan's email, 3:40 pm"). People go on a card as its assignees, by the ids list_members gives.
 
@@ -18,6 +18,6 @@ Before moving a card, read list_projects for its board: each project has its own
 
 Work cheaply: every answer comes out of my own AI plan, so read only what you need and open a card only when a line needs explaining.
 
-Tell me in plain words what you found ("Since your call, three things changed: …"), then what you drafted, and whether it waits for me in Cardigan or went through on its own, as the reply said.
+Tell me in plain words what you found ("Since your call, three things changed: …"), then what you drafted, and whether it is pending in Cardigan or went through on its own, as the reply said.
 
 Anything I added after the command: $ARGUMENTS
