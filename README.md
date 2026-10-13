@@ -16,9 +16,13 @@ connection asks you to sign in once: type `/mcp`, choose *cardigan*, then *Authe
 
 Then, in a new chat, say *Set up my Cardigan*, or type `/cardigan:start`.
 
-## Keep it current in Claude Code
+## Keep it current
 
-Claude Code keeps the copy of the package you first installed, and doesn't fetch a new one by itself. If a command
+In the Claude desktop app, type `/plugin` in a chat. Under **From marketplaces you added**, find **Cardigan** and press
+**Update**. The app has no automatic update, so do this now and then. Leave the switch beside **Update** on: it turns the
+package off.
+
+In a terminal, Claude Code keeps the copy of the package you first installed, and doesn't fetch a new one by itself. If a command
 such as `/cardigan:catch-me-up` or `/cardigan:start` isn't there, or a request says its file was not found, get the
 current package:
 

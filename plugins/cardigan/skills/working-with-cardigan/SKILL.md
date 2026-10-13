@@ -116,6 +116,11 @@ Every answer comes out of the person's own AI plan.
   `waitingOn` on a card that waits on open work.
 - **A whole new board:** draft it with `propose_board`, from a board file in the shape its description gives. A card
   in the file can carry its own `why`.
+- **A board inside a round of changes:** `board.create` makes the board with one project (named by its `project`,
+  General if left out) and the default columns, so it needs no second project. Give the change `as: "b1"`, and put
+  its first cards in the same round with `card.create` and `boardId: { "ref": "b1" }`.
+- **A change that is already so** (a card moved to the column it is already in) comes back as a line, not an error.
+  Nothing was drafted for it. In a round, it is left out and the rest go ahead.
 - **A new workspace:** draft it with `propose_workspace`, then add its boards with `propose_board` and the
   `workspaceId` it gave back: the person approves the workspace and its boards together.
 - **More than one workspace:** when a change names no board, such as a new board or a milestone, and the person has
