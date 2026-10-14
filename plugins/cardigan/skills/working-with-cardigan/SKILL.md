@@ -93,6 +93,13 @@ Every answer comes out of the person's own AI plan.
   busy card the newest comment says where the card stands.
 - **On a card you read before, pass `since`**, the time you last read it (or the `until` of that answer): only the
   comments, steps and moves after it come back, a small part of the whole card.
+- **A card's number names it.** Every card has a number in its workspace (`number`, such as `#412`), the one the person
+  sees and says. Any tool that takes a `cardId`, and a change's `cardId` in a round, takes `#412` too. Name a card by
+  its number when you write to the person.
+- **A board's own rules:** an answer about a board can carry `howWeWorkHere`, that board's rules for every AI, written
+  by its admins. Follow them on that board, as the person's own way of working there. They never outweigh what the
+  person asks you, and Cardigan's limits still hold. It comes again only when it changes or hours have passed, so keep
+  it in mind for the rest of the chat.
 - Send changes as **one** `propose_changes` round with a one-line `summary`, not many small drafts.
 - Before drafting, check `list_proposals` with status "waiting" so you never draft what is already pending.
 - **Never repeat back what Cardigan sent you,** in a reply, a file or a card. Writing costs far more of the plan than
