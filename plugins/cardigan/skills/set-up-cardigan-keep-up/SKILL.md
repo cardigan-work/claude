@@ -8,9 +8,11 @@ description: Set up a scheduled task that keeps the person's Cardigan up to date
 The person wants what they ask in Cardigan picked up without having to remind you. Set up one scheduled task for it.
 With it on, anything they ask in Cardigan is done within the hour, and Cardigan tells them when to expect it.
 
-## Tell them first, in three short lines
+## Tell them first, in four short lines
 
 - You will check Cardigan every hour, do what they asked, and stop straight away when nothing is waiting.
+- You will also pick up cards where a teammate tagged them or sent one back: answer questions of fact from Cardigan,
+  prepare checks, and sort what came back. Anything about direction, or that a customer sees, you tag to them.
 - Nothing changes on a board until they approve it in Cardigan, unless they have let that kind of change through. So
   it is safe to let the task keep working without stopping to ask.
 - Each check uses a little of their Claude plan. Scheduled tasks need a paid Claude plan.
@@ -30,7 +32,8 @@ Ask whether to also catch up once a day from their meetings and email; the defau
 - **Connectors:** Cardigan, plus their email and calendar only if they chose the daily catch-up
 - **Instructions for the task:** "Use the keep-cardigan-current skill. Call list_asks with scheduledRun saying how
   often this task runs (for example everyHours 1, days "every day"). Work through my open Cardigan to-dos, draft each
-  one, and close each with answer_ask. Stop when nothing is waiting." Add "Also catch up from my meetings and email
+  one, and close each with answer_ask. Then work the cards waiting on me, within the skill's limits. Stop when nothing
+  is waiting." Add "Also catch up from my meetings and email
   once a day" only if they chose it. If they chose other days or hours, put them in scheduledRun too (days
   "weekdays", from and to as HH:MM in their time).
 

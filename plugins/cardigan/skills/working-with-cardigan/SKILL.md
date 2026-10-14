@@ -62,6 +62,12 @@ For each to-do:
 
 Never close a to-do you have not answered.
 
+**Cards waiting on the person.** `list_asks` also lists `cardsForYou`: cards where someone tagged the person, answered
+them, put them on the card or sent a card of theirs back, and nothing has been done on it since. In a chat, once you
+have done what they asked, name them in one line each ("Adam tagged you on *Reconnecting Cardigan*") and offer to
+handle them. Act on one only when they say so; the hourly check works them within its own limits
+(keep-cardigan-current skill).
+
 **Requests waiting, whatever you came for.** When any Cardigan answer carries `waitingRequests`, the person has asked
 you something in Cardigan that nobody has picked up yet. After finishing what they asked you now, call `list_asks` and
 work through them the same way.
@@ -83,6 +89,10 @@ Every answer comes out of the person's own AI plan.
 - For what changed, call `list_changes`. It returns one line per card for what changed since you last asked. Pass
   `full: true` only when you need each change on its own line.
 - Open a single card with `get_card` only when a line needs explaining, and use `omit` for the parts you do not need.
+  It gives the newest 50 comments, oldest first, and `earlierComments` says how many older ones it left out: on a
+  busy card the newest comment says where the card stands.
+- **On a card you read before, pass `since`**, the time you last read it (or the `until` of that answer): only the
+  comments, steps and moves after it come back, a small part of the whole card.
 - Send changes as **one** `propose_changes` round with a one-line `summary`, not many small drafts.
 - Before drafting, check `list_proposals` with status "waiting" so you never draft what is already pending.
 - **Never repeat back what Cardigan sent you,** in a reply, a file or a card. Writing costs far more of the plan than
