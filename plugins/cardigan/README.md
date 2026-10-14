@@ -57,9 +57,9 @@ connections. This package contains only instructions and the connector's address
 
 ## Keep it current
 
-In the Claude desktop app, type `/plugin` in a chat. Under **From marketplaces you added**, find **Cardigan** and press
-**Update**. The app has no automatic update, so do this now and then. Leave the switch beside **Update** on: it turns the
-package off.
+In the Claude desktop app, open **Customize**, then **Plugins**, and press **Check for updates**. Then click
+**Cardigan** and press **Update**. A grayed-out **Update** that says **On latest version** means you have the newest
+one. Do this now and then: the app does not update it by itself.
 
 In a terminal, Claude Code keeps the copy of this package you first installed. If a command such as `/cardigan:catch-me-up` isn't
 there, type `claude plugin update cardigan@cardigan` in a terminal, then start a new session. To get each new version

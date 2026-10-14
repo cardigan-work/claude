@@ -18,9 +18,9 @@ Then, in a new chat, say *Set up my Cardigan*, or type `/cardigan:start`.
 
 ## Keep it current
 
-In the Claude desktop app, type `/plugin` in a chat. Under **From marketplaces you added**, find **Cardigan** and press
-**Update**. The app has no automatic update, so do this now and then. Leave the switch beside **Update** on: it turns the
-package off.
+In the Claude desktop app, open **Customize**, then **Plugins**, and press **Check for updates**. Then click
+**Cardigan** and press **Update**. A grayed-out **Update** that says **On latest version** means you have the newest
+one. Do this now and then: the app does not update it by itself.
 
 In a terminal, Claude Code keeps the copy of the package you first installed, and doesn't fetch a new one by itself. If a command
 such as `/cardigan:catch-me-up` or `/cardigan:start` isn't there, or a request says its file was not found, get the
