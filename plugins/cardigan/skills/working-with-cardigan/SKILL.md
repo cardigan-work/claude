@@ -90,6 +90,8 @@ Every answer comes out of the person's own AI plan.
   the person, so a catch-up needs no `list_proposals`.
 - For what changed, call `list_changes`. It returns one line per card for what changed since you last asked. Pass
   `full: true` only when you need each change on its own line.
+- When the person asks how to do something in Cardigan or where something is, call `find_help` with their question,
+  offer to do it when it says you can, and give the link.
 - Open a single card with `get_card` only when a line needs explaining, and use `omit` for the parts you do not need.
   It gives the newest 50 comments, oldest first, and `earlierComments` says how many older ones it left out: on a
   busy card the newest comment says where the card stands.
