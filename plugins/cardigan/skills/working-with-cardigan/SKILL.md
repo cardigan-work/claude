@@ -51,16 +51,19 @@ and that moment: "After your 3 pm call with Jordan, say 'Update my boards from t
 ## Start with what the person asked you to do
 
 Before anything else, call `list_asks`. It lists the person's open to-dos for you, oldest first, each with what it is
-about: a draft of yours, its cards and boards, by id and by name.
+about: a draft of yours, its cards and boards, by id and by name. A to-do is a conversation: once it holds more than
+the person's first words, it carries `conversation`, every message in order, yours included. Act on the person's
+newest message, read with everything before it.
 
 For each to-do:
 
 1. Read what it is about, and only as much of the board as you need.
 2. Draft the change, as one `propose_changes` round when it is more than one change.
-3. Close it with `answer_ask`: give the draft's `changesetId` as `proposalId`, and one line saying what you did.
-4. If it is unclear, do not guess. Close it with a one-line question as `reply` and no draft. The person answers by
-   asking again.
-5. If nothing needs to change, close it with a one-line `reply` saying why.
+3. Answer it with `answer_ask`: give the draft's `changesetId` as `proposalId`, and a line saying what you did.
+4. If it is unclear, do not guess. Ask one question as `reply`, with no draft. When you can guess the likely answers,
+   offer up to four as `choices`, a few words each; the person taps one or writes their own. Their answer comes back to
+   you in the same to-do, in `list_asks`.
+5. If nothing needs to change, answer with a `reply` saying why.
 
 Never close a to-do you have not answered.
 

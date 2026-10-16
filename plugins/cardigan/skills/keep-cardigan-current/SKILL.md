@@ -19,10 +19,11 @@ work through what is waiting, but never do more than was asked or than the limit
 2. **If there are neither**, and the task did not ask you to catch up (step 5), stop. Answer with one line: "Nothing new
    was asked since the last check." Call nothing else.
 3. **For each to-do**, follow the to-do loop in the working-with-cardigan skill:
-   - read only what it is about;
+   - read only what it is about, and its `conversation` when it has one: act on the person's newest message;
    - draft the change, as one `propose_changes` round when it is more than one change;
-   - close it with `answer_ask`, with the draft's `changesetId` and one line.
-   - If it is unclear, close it with a one-line question and no draft. Nobody is watching to answer you now.
+   - answer it with `answer_ask`, with the draft's `changesetId` and a line.
+   - If it is unclear, ask one question with `answer_ask` and no draft, with up to four `choices` when you can guess the
+     answers. Nobody is watching to answer you now; their answer comes back in this to-do at a later check.
 4. **Then each card in `cardsForYou`.** Someone tagged the person, answered them, put them on the card, or sent a card
    of theirs back; `why` says which, and who. It counts as work, within the limits below.
    - Read what is new on it: `get_card` with `since` set to the day before its `at`. Read the whole card only if that
