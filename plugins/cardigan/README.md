@@ -9,9 +9,9 @@ work with it well.
 - **Sets up your first boards from your own work.** In a new chat, say *Set up my Cardigan*. Claude offers to read your
   email and calendar from the last two weeks, your calendar only, or what you tell it. It shows you what it found,
   asks a few questions about the gaps, and lays out a board for each client or strand of work for you to approve.
-- **Connects Claude to Cardigan.** Already connected with Cardigan's address? Keep that connection: these guides use
-  it, and the package's own *Cardigan* entry needs no connecting. Otherwise, connect *Cardigan* on the package's
-  Connectors tab and sign in to your Cardigan account. There is no key or password to copy.
+- **Connects Claude to Cardigan.** Connect *Cardigan* on the package's Connectors tab and sign in to your Cardigan
+  account. Already connected with Cardigan's address? Connect the package's entry as well: it joins the same
+  connection, and a scheduled task may use either one. There is no key or password to copy.
 - **Teaches Claude how Cardigan works:** how to catch up cheaply on what changed, how to draft updates as one round,
   each change saying where it came from, and how to work through the to-dos you give it in Cardigan and close each one.
 - **Keeps your boards current on its own, if you want.** Ask Claude to *keep Cardigan up to date*, or say yes when it

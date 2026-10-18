@@ -8,8 +8,8 @@ schedule.
 
 1. In Claude, open **Customize › Plugins › Add › Add marketplace** and paste this repository's address.
 2. Open **Discover**, find **Cardigan** under New plugins, and press **+** to install it.
-3. Already connected to Cardigan with its address? Keep that connection: the package's guides use it, and a second
-   *Cardigan* under Connectors needs no connecting. Otherwise, connect *Cardigan* there and sign in.
+3. Connect *Cardigan* under the package's Connectors and sign in. Already connected to Cardigan with its address?
+   Connect this one as well: it joins the same connection, and a scheduled task may use either one.
 
 In Claude Code: `/plugin marketplace add cardigan-work/claude`, then `/plugin install cardigan@cardigan`. The package's
 connection asks you to sign in once: type `/mcp`, choose *cardigan*, then *Authenticate*.

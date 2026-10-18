@@ -65,7 +65,9 @@ The quiet line is a claim, so say it only when it is true:
   cards or changes pending their approval, so the quiet line says nothing about those, and never "Nothing late, nothing
   pending." *Catch me up* is where they are read.
 - **A failed call is never quiet.** If `list_asks` or any other call failed, say what you could not check ("Could not
-  reach Cardigan, so I could not check what you asked.") and do not call it quiet.
+  reach Cardigan, so I could not check what you asked.") and do not call it quiet. If Cardigan's tools are missing
+  or ask you to sign in, say that this task's Cardigan connector in Claude is signed out, and that connecting it
+  again in Claude fixes it.
 - **The person's way comes first.** If they have told you how they like to be answered, use their way.
 
 ## Never

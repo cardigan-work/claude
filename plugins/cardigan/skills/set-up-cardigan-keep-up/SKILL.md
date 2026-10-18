@@ -29,7 +29,10 @@ Ask whether to also catch up once a day from their meetings and email; the defau
 - **Model:** if the schedule lets you choose, a lighter one than the most capable: each check reads a little and
   drafts small changes
 - **Permissions:** keep working without stopping (auto), because Cardigan holds every change for their approval
-- **Connectors:** Cardigan, plus their email and calendar only if they chose the daily catch-up
+- **Connectors:** Cardigan, plus their email and calendar only if they chose the daily catch-up. Claude can list
+  Cardigan twice, once from the address they added and once from this package. Choose the one that is connected,
+  the one this chat is using. If both are listed and one is not connected, tell them to connect it too (it joins the
+  same Cardigan connection), so the task works whichever one it reaches for.
 - **Instructions for the task:** "Use the keep-cardigan-current skill. Call list_asks with scheduledRun saying how
   often this task runs (for example everyHours 1, days "every day"). Work through my open Cardigan to-dos, draft each
   one, and close each with answer_ask. Then work the cards waiting on me, within the skill's limits. Stop when nothing
