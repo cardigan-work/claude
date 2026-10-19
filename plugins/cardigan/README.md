@@ -15,8 +15,9 @@ work with it well.
 - **Teaches Claude how Cardigan works:** how to catch up cheaply on what changed, how to draft updates as one round,
   each change saying where it came from, and how to work through the to-dos you give it in Cardigan and close each one.
 - **Keeps your boards current on its own, if you want.** Ask Claude to *keep Cardigan up to date*, or say yes when it
-  offers, and it sets up a scheduled task that checks Cardigan every hour, so what you ask there is done within the
-  hour. Scheduled tasks need a paid Claude plan.
+  offers, and it sets up a scheduled task that checks Cardigan every hour on weekdays from 8:00 to 18:00, so what you
+  ask there is done within the hour. You change the days and hours in Cardigan, on Settings › AI. Scheduled tasks need
+  a paid Claude plan.
 - **Ready-made requests:** *Set up my Cardigan*, *Catch me up*, *Update my boards from today*, *Tidy a board* and
   *Keep up*.
 

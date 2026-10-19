@@ -16,6 +16,11 @@ work through what is waiting, but never do more than was asked or than the limit
    tells Cardigan the check is running, so it can tell the person when to expect answers and when the check stops. The
    answer is the person's open to-dos for you, oldest first, and `cardsForYou`: cards that reached the person since the
    last check.
+   - **`outsideHours`** means this run is outside the days and hours the person chose in Cardigan. Stop at once: call
+     nothing else, skip the daily catch-up, and answer with one line: "Outside your hours, so nothing was read."
+   - **`checkHours`** means this task runs at other times than the person chose. If you can change this task's own
+     schedule, change it to every hour on those days and hours, in that time zone. If you cannot, carry on; Cardigan
+     shows the person the sentence that changes it.
 2. **If there are neither**, and the task did not ask you to catch up (step 5), stop. Answer with one line: "Nothing new
    was asked since the last check." Call nothing else.
 3. **For each to-do**, follow the to-do loop in the working-with-cardigan skill:
