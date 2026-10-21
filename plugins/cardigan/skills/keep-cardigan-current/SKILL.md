@@ -69,7 +69,7 @@ These are Cardigan's limits for every team. If the person, or a board's own rule
 The quiet line is a claim, so say it only when it is true:
 
 - **Only for what you read.** This check reads what the person asked of you and the cards that reached them, not late
-  cards or changes pending their approval, so the quiet line says nothing about those, and never "Nothing late, nothing
+  cards or changes pending their approval, so the quiet line says nothing about those, and never "Nothing overdue, nothing
   pending." *Catch me up* is where they are read.
 - **A failed call is never quiet.** If `list_asks` or any other call failed, say what you could not check ("Could not
   reach Cardigan, so I could not check what you asked.") and do not call it quiet. If Cardigan's tools are missing
