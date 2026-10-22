@@ -1,18 +1,18 @@
 ---
-description: "Draft one round of changes to your Cardigan boards from today's meetings, email and notes, each saying where it came from, for you to approve."
+description: "Draft changes to your Cardigan boards from today's meetings, email and notes, each saying where it came from, for you to approve."
 ---
 
 Update my Cardigan boards from today's work.
 
-Go through what happened since my boards were last brought up to date: since the moment you named for it (such as my 3 pm call), or else since your last round in list_proposals, and all of today. Read my meetings, email and documents through your other connections, and the notes below if there are any.
+Go through what happened since my boards were last brought up to date: since the moment you named for it (such as my 3 pm call), or else since your last draft in list_proposals, and all of today. Read my meetings, email and documents through your other connections, and the notes below if there are any.
 
 First read list_asks: what I asked you to do comes first, and close each with answer_ask once it is drafted.
 
 Before drafting, read list_changes and list_proposals, so you draft nothing that is already on a board or already pending.
 
-Then send ONE round with propose_changes: new cards, moves, dates, people and comments, with a one-line summary. Give each change a why: where it came from, in a few words ("Jordan's email, 3:40 pm"). People go on a card as its assignees, by the ids list_members gives.
+Then send ONE draft with propose_changes: new cards, moves, dates, people and comments, with a one-line summary. Give each change a why: where it came from, in a few words ("Jordan's email, 3:40 pm"). People go on a card as its assignees, by the ids list_members gives.
 
-When something can't start until other work is done, make its card wait on that card in the same round: card.link with kind waits_on.
+When something can't start until other work is done, make its card wait on that card in the same draft: card.link with kind waits_on.
 
 Before moving a card, read list_projects for its board: each project has its own columns, and some are named their own way (Working, Backlog). Move a card only to a column its project has, and map my words to the closest one.
 
