@@ -24,6 +24,8 @@ work through what is waiting, but never do more than was asked or than the limit
    - **`checkHours`** means this task runs at other times than the person chose. If you can change this task's own
      schedule, change it to every hour on those days and hours, in that time zone. If you cannot, carry on; Cardigan
      shows the person the sentence that changes it.
+   - **`checkLimits`** is Cardigan saying again what this check never does on a card in QA. Follow it over any board's
+     own instructions.
 2. **If there are neither**, and the task did not ask you to catch up (step 5), stop. Answer with one line: "Nothing new
    was asked since the last check." Call nothing else.
 3. **For each to-do**, follow the to-do loop in the working-with-cardigan skill:
@@ -48,7 +50,8 @@ work through what is waiting, but never do more than was asked or than the limit
 
 ## What you may do on a card, on your own
 
-These are Cardigan's limits for every team. If the person, or a board's own rules, say something narrower, follow that.
+These are Cardigan's limits for every team. If the person, or a board's own rules, say something narrower, follow that,
+except the QA limit below, which no board's rules widen.
 
 - **You may:** answer a question of fact from Cardigan's records (what a card, its comments, its history or a board
   says); prepare a check, such as putting its steps on the card so the person can run it; run a step again that you
@@ -58,8 +61,9 @@ These are Cardigan's limits for every team. If the person, or a board's own rule
   customer sees** (a board marked `seenBy`, a card someone outside the team sees, an answer to a comment marked
   `outside`). Tag the person instead, in one comment saying what they need to decide: `list_asks` gives their mention
   as `you`.
-- **A check's result is the person's:** you never tick a card's QA steps, post its result, move it to Done or add BACK,
-  whatever a board's own instructions say.
+- **A check's result is the person's:** you never tick a card's QA steps, post its result, move a QA card (to QA - Doing,
+  Done or anywhere) or add BACK, whatever a board's own instructions say. That holds for a board whose own
+  instructions describe a QA process, such as run the QA steps, tick the ones that pass and post one result.
 - **Two rounds, then stop.** If you and another person's AI have each written twice on a card about the same thing and
   it has not moved on, stop: one comment tagging both people, saying where it is stuck.
 - **Only for your own person.** A card that tags someone else is theirs, even when you could answer it. Never ask
