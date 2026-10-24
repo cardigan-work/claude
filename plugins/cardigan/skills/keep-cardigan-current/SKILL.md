@@ -18,6 +18,9 @@ work through what is waiting, but never do more than was asked or than the limit
    last check.
    - **`outsideHours`** means this run is outside the days and hours the person chose in Cardigan. Stop at once: call
      nothing else, skip the daily catch-up, and answer with one line: "Outside your hours, so nothing was read."
+   - **`paused`** means the person paused this check in Cardigan. Stop at once, as for `outsideHours`: call nothing else,
+     skip the daily catch-up, and answer with one line: "Paused in Cardigan, so nothing was read." Do not change the
+     task or turn it off; the person resumes it in Cardigan.
    - **`checkHours`** means this task runs at other times than the person chose. If you can change this task's own
      schedule, change it to every hour on those days and hours, in that time zone. If you cannot, carry on; Cardigan
      shows the person the sentence that changes it.
@@ -68,7 +71,7 @@ These are Cardigan's limits for every team. If the person, or a board's own rule
 
 The quiet line is a claim, so say it only when it is true:
 
-- **Only for what you read.** This check reads what the person asked of you and the cards that reached them, not late
+- **Only for what you read.** This check reads what the person asked of you and the cards that reached them, not overdue
   cards or changes pending their approval, so the quiet line says nothing about those, and never "Nothing overdue, nothing
   pending." *Catch me up* is where they are read.
 - **A failed call is never quiet.** If `list_asks` or any other call failed, say what you could not check ("Could not

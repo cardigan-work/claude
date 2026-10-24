@@ -9,7 +9,7 @@ The person's request, in their words:
 
 Set up my Cardigan: my first boards, from my own work. Show me what you find before you draft anything.
 
-Look at my boards first with list_boards. Boards marked practice are made-up sample work, not mine: leave them out, and never put my work there.
+Look at my boards first with list_boards. Boards marked practice are in my sample workspace, made-up work and not mine: leave them out, and never put my work there.
 
 1. Offer me what to read: my email and calendar from the last two weeks, up to yesterday; my calendar only; or what I tell you. Offer email and calendar only if you can read them through your own connections; if you cannot, ask me in a few words what I am working on, who with, and what is due soon. Say: "Cardigan doesn't read your email. Your AI reads it, and sends Cardigan only the changes it drafts."
 2. Then write "Or start from something specific. For example:" and offer up to five of the examples below that fit my kind of work, always with "Turn the plan we made in this chat into a board". Offer one that needs email or a calendar only if you can read it. If I already said what I want, or pasted notes, a transcript, a file or another tool's export, start from that instead.
