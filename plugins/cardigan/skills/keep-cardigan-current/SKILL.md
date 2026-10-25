@@ -11,8 +11,9 @@ work through what is waiting, but never do more than was asked or than the limit
 
 ## Each check
 
-1. **Call `list_asks` with `scheduledRun`**, saying how often this task runs: `everyHours` (1 for hourly), `days`
-   ("every day" or "weekdays"), and `from` and `to` (HH:MM, the person's time) only if it runs in certain hours. This
+1. **Call `list_asks` with `scheduledRun`**, exactly as the task's instructions write it: `everyHours` (1 for hourly),
+   `days` ("every day" or "weekdays"), `from` and `to` (HH:MM, the person's time) only if it runs in certain hours, and
+   `task`, which says which of Cardigan's own tasks this one was written from. This
    tells Cardigan the check is running, so it can tell the person when to expect answers and when the check stops. The
    answer is the person's open to-dos for you, oldest first, and `cardsForYou`: cards that reached the person since the
    last check.
@@ -24,6 +25,9 @@ work through what is waiting, but never do more than was asked or than the limit
    - **`checkHours`** means this task runs at other times than the person chose. If you can change this task's own
      schedule, change it to every hour on those days and hours, in that time zone. If you cannot, carry on; Cardigan
      shows the person the sentence that changes it.
+   - **`replaceTask`** means this task was not written from the task Cardigan made (an older one, or one written another
+     way). If you can change this task, set its schedule and instructions to exactly the `replaceTask`'s `schedule` and
+     `prompt`, character for character, and say so in your last line. If you cannot, carry on within the limits below.
    - **`checkLimits`** is Cardigan saying again what this check never does on a card in QA. Follow it over any board's
      own instructions.
 2. **If there are neither**, and the task did not ask you to catch up (step 5), stop. Answer with one line: "Nothing new
