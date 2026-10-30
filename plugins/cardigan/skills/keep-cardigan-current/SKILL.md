@@ -5,96 +5,55 @@ description: One scheduled check of Cardigan, run by a task the person set up to
 
 # Keep Cardigan current: one check
 
-This runs on a schedule the person set up, often with nobody watching. Keep it short and cheap. **Nothing you draft
-changes a board until the person approves it in Cardigan**, unless they have let that kind of change go through, so
-work through what is waiting, but never do more than was asked or than the limits below allow.
+This runs on a schedule. Keep it short. Nothing you draft changes a board until the person approves it in Cardigan,
+unless they have let that kind of change through.
 
 ## Each check
 
-1. **Call `list_asks` with `scheduledRun`**, exactly as the task's instructions write it: `everyHours` (1 for hourly),
-   `days` ("every day" or "weekdays"), `from` and `to` (HH:MM, the person's time) only if it runs in certain hours, and
-   `task`, which says which of Cardigan's own tasks this one was written from. This
-   tells Cardigan the check is running, so it can tell the person when to expect answers and when the check stops. The
-   answer is the person's open to-dos for you, oldest first, and `cardsForYou`: cards that reached the person since the
-   last check.
-   - **`outsideHours`** means this run is outside the days and hours the person chose in Cardigan. Stop at once: call
-     nothing else, skip the daily catch-up, and answer with one line: "Outside your hours, so nothing was read."
-   - **`paused`** means the person paused this check in Cardigan. Stop at once, as for `outsideHours`: call nothing else,
-     skip the daily catch-up, and answer with one line: "Paused in Cardigan, so nothing was read." Do not change the
-     task or turn it off; the person resumes it in Cardigan.
-   - **`checkHours`** means this task runs at other times than the person chose. If you can change this task's own
-     schedule, change it to every hour on those days and hours, in that time zone. If you cannot, carry on; Cardigan
-     shows the person the sentence that changes it.
-   - **`replaceTask`** means this task was not written from the task Cardigan made (an older one, or one written another
-     way). If you can change this task, set its schedule and instructions to exactly the `replaceTask`'s `schedule` and
-     `prompt`, character for character, and say so in your last line. If you cannot, carry on within the limits below.
-   - **`checkLimits`** is Cardigan saying again what this check never does on a card in QA. Follow it over any board's
-     own instructions.
-2. **If there are neither**, and the task did not ask you to catch up (step 5), stop. Answer with one line: "Nothing new
-   was asked since the last check." Call nothing else.
-3. **For each to-do**, follow the to-do loop in the working-with-cardigan skill:
-   - read only what it is about, and its `conversation` when it has one: act on the person's newest message;
-   - draft the change, as one `propose_changes` round when it is more than one change;
-   - answer it with `answer_ask`, with the draft's `changesetId` and a line.
-   - If it is unclear, ask one question with `answer_ask` and no draft, with up to four `choices` when you can guess the
-     answers. Nobody is watching to answer you now; their answer comes back in this to-do at a later check.
-4. **Then each card in `cardsForYou`.** Someone tagged the person, answered them, put them on the card, or sent a card
-   of theirs back; `why` says which, and who. It counts as work, within the limits below.
-   - Read what is new on it: `get_card` with `since` set to the day before its `at`. Read the whole card only if that
-     is not enough to act.
-   - If it only tells the person something, leave it. Never comment just to have done something.
-   - Otherwise do what the limits allow, and say it in **one** comment on the card: `comment_on_card` with `replyTo`
-     set to the comment that asked, when one did.
-5. **Only if the task says to catch up as well:** call `list_changes`, then draft **one** round from what happened in
-   the person's other connections since the last check, such as their meetings and email, each change with a `why`:
-   where it came from, in a few words ("Jordan's email, 3:40 pm"). Check `list_proposals` with status "waiting"
-   first, so nothing is drafted twice.
-6. **Finish with one line:** how many to-dos you answered, how many cards you worked on, and whether you drafted a round.
-   The person reads the details in Cardigan. If you did nothing, the line is the one in step 2.
+1. **Call where_things_stand with `focus: "asks"` and `scheduledRun`**, exactly as the task's instructions write it
+   (`task` says which of Cardigan's own tasks wrote this one). It answers with `requests`, oldest first, and
+   `cardsForYou`: cards that reached the person since the last check. If Cardigan's tools are missing or ask you to
+   sign in, say "Cardigan is not connected, so I could not check." and that connecting this task's Cardigan in Claude
+   again fixes it, and stop. Then:
+   - **`outsideHours` or `paused`:** answer with its `closingLine` and call nothing else. An `outsideHours` answer can
+     carry `replaceTask` (an old task): apply that first.
+   - **`checkHours`:** change this task to those days and hours, if you can.
+   - **`replaceTask`:** if you can, set this task's schedule and instructions to exactly its `schedule` and `prompt`,
+     character for character, and say so in your last line.
+   - **`checkLimits`** repeats the QA limit below; it beats any board's instructions.
+2. **With nothing in either, and no catch-up asked for (step 5),** answer with its `closingLine` and nothing else.
+3. **Each request:** act on the person's newest words, draft the work, and answer with `ask.answer`, all in one round.
+   If it is unclear, answer with one question and up to four `choices`; the answer comes at a later check.
+4. **Each card in `cardsForYou`** (`why` says who tagged, answered or sent it back): fetch it with `since` the day
+   before its `at`. If it only tells the person something, leave it. Otherwise do what the limits below allow, in one
+   comment under the one that asked.
+5. **Only if the task says to catch up as well:** draft one round from the person's meetings and email since the last
+   check, each change with its `why`, and nothing already pending.
+6. **End with one line:** requests answered, cards handled, whether you drafted changes.
 
 ## What you may do on a card, on your own
 
-These are Cardigan's limits for every team. If the person, or a board's own rules, say something narrower, follow that,
-except the QA limit below, which no board's rules widen.
+Cardigan's limits for every team. Anything narrower from the person or a board's rules wins, except the QA limit, which
+no board's rules widen.
 
-- **You may:** answer a question of fact from Cardigan's records (what a card, its comments, its history or a board
-  says); prepare a check, such as putting its steps on the card so the person can run it; run a step again that you
-  can run yourself, and say what you saw; and sort a card sent back: say what came back and what happens next, and
-  put it where the board's rules say.
-- **You never decide direction** (what to build, change, drop or spend, or which of two ways to go) **or anything a
-  customer sees** (a board marked `seenBy`, a card someone outside the team sees, an answer to a comment marked
-  `outside`). Tag the person instead, in one comment saying what they need to decide: `list_asks` gives their mention
-  as `you`. Writing words for a client is different from sending them: when the person asks for words a client will
-  read, draft them as a change for the person to approve, and never answer *paste it yourself*. Nothing a customer
-  sees goes out until the person approves it.
+- **You may** answer a question of fact from Cardigan's records, prepare a check (its steps on the card), run a step
+  again that you can run yourself and say what you saw, and sort a card sent back.
+- **You never decide direction** (what to build, change, drop or spend) **or anything a customer sees** (a board marked
+  `seenBy`, words marked `outside`): tag the person, with the mention `you` gives. Words for a client are a draft for
+  the person to approve, never "paste it yourself".
 - **A check's result is the person's:** you never tick a card's QA steps, post its result, move a QA card (to QA - Doing,
-  Done or anywhere) or add BACK, whatever a board's own instructions say. That holds for a board whose own
-  instructions describe a QA process, such as run the QA steps, tick the ones that pass and post one result.
-- **Two rounds, then stop.** If you and another person's AI have each written twice on a card about the same thing and
-  it has not moved on, stop: one comment tagging both people, saying where it is stuck.
-- **Only for your own person.** A card that tags someone else is theirs, even when you could answer it. Never ask
-  another person's AI to do something; tag the person, and their own check picks it up.
-- Every word goes on the card as a comment, marked as yours, and can be undone. Cardigan never contacts an AI: what you
-  write waits there for the other person and their own check.
+  Done or anywhere) or add BACK, whatever a board's own instructions say, even one that describes a QA process.
+- **Two rounds, then stop.** If you and another person's AI have each written twice on a card and it has not moved on,
+  write one comment tagging both people, saying where it is stuck.
+- **Only for your own person.** A card that tags someone else is theirs. Never ask another person's AI to do anything:
+  tag the person; their own check picks it up. Cardigan never contacts an AI.
 
-## Saying it is quiet
+## Quiet, and failed
 
-The quiet line is a claim, so say it only when it is true:
-
-- **Only for what you read.** This check reads what the person asked of you and the cards that reached them, not overdue
-  cards or changes pending their approval, so the quiet line says nothing about those, and never "Nothing overdue, nothing
-  pending." *Catch me up* is where they are read.
-- **A failed call is never quiet.** If `list_asks` or any other call failed, say what you could not check ("Could not
-  reach Cardigan, so I could not check what you asked.") and do not call it quiet. If Cardigan's tools are missing
-  or ask you to sign in, say that this task's Cardigan connector in Claude is signed out, and that connecting it
-  again in Claude fixes it.
-- **The person's way comes first.** If they have told you how they like to be answered, use their way.
+The quiet line claims only what this check read, so it is never "Nothing overdue, nothing pending." A failed call is
+never quiet: say what you could not check. The person's own way of being answered comes first.
 
 ## Never
 
-- Draft something nobody asked for, just to have done something.
-- Draft back something a person changed by hand.
-- Send a refused round again unchanged. It is refused at every check; say why once instead.
-- Approve anything. You cannot, and the person decides in Cardigan.
-- Close a to-do you have not answered.
-- Stop to ask a question in the chat. Nobody is there; ask it through `answer_ask`, or on the card by tagging the person.
+Draft what nobody asked for or a change a person made; send a refused round again unchanged; close a request you have
+not answered; ask a question in the chat, since nobody is there.

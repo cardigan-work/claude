@@ -6,7 +6,8 @@ schedule.
 
 ## Add it
 
-1. In Claude, open **Customize › Plugins › Add › Add marketplace** and paste this repository's address.
+1. In Claude, open **Customize › Plugins › Add › Add marketplace**, paste this repository's address, and turn on
+   **Sync automatically**, so each new version reaches you by itself.
 2. Open **Discover**, find **Cardigan** under New plugins, and press **+** to install it.
 3. Connect *Cardigan* under the package's Connectors and sign in. Already connected to Cardigan with its address?
    Connect this one as well: it joins the same connection, and a scheduled task may use either one.
@@ -18,9 +19,9 @@ Then, in a new chat, say *Set up my Cardigan*, or type `/cardigan:start`.
 
 ## Keep it current
 
-In the Claude desktop app, open **Customize**, then **Plugins**, and press **Check for updates**. Then click
-**Cardigan** and press **Update**. A grayed-out **Update** that says **On latest version** means you have the newest
-one. Do this now and then: the app does not update it by itself.
+With **Sync automatically** on, new versions arrive on their own, and Claude Code gets them at its next session.
+Without it, in the Claude desktop app, open **Customize**, then **Plugins**, and click **Cardigan**. Press **Update**,
+then start a new chat. A grayed-out **Update** that says **On latest version** means you have the newest one.
 
 In a terminal, Claude Code keeps the copy of the package you first installed, and doesn't fetch a new one by itself. If a command
 such as `/cardigan:catch-me-up` or `/cardigan:start` isn't there, or a request says its file was not found, get the

@@ -1,25 +1,26 @@
 # Cardigan for Claude
 
-Cardigan is a project board — workspaces, boards, projects and cards — where the work your AI does is seen,
-approved and shown to other people. This package connects Claude to your Cardigan account and teaches Claude how to
+Cardigan keeps your boards current from your own work. Claude drafts the changes, you approve them, and the people
+you share with see where things stand. This package connects Claude to your Cardigan account and teaches Claude how to
 work with it well.
 
 ## What it does
 
 - **Sets up your first boards from your own work.** In a new chat, say *Set up my Cardigan*. Claude offers to read your
   email and calendar from the last two weeks, your calendar only, or what you tell it. It shows you what it found,
-  asks a few questions about the gaps, and lays out a board for each client or strand of work for you to approve.
+  asks a few questions about the gaps, and lays out a board for each client or line of work for you to approve.
 - **Connects Claude to Cardigan.** Connect *Cardigan* on the package's Connectors tab and sign in to your Cardigan
   account. Already connected with Cardigan's address? Connect the package's entry as well: it joins the same
   connection, and a scheduled task may use either one. There is no key or password to copy.
-- **Teaches Claude how Cardigan works:** how to catch up cheaply on what changed, how to draft updates as one round,
-  each change saying where it came from, and how to work through the to-dos you give it in Cardigan and close each one.
+- **Teaches Claude how Cardigan works.** It learns to catch you up, draft changes for your approval, answer your
+  requests, take a card and do its work, and share a board or add a file. Each guide loads only for its own job, so it
+  uses little of your plan.
 - **Keeps your boards current on its own, if you want.** Ask Claude to *keep Cardigan up to date*, or say yes when it
   offers, and it sets up a scheduled task that checks Cardigan every hour on weekdays from 8:00 to 18:00, so what you
-  ask there is done within the hour. You change the days and hours in Cardigan, on Settings › AI. Scheduled tasks need
-  a paid Claude plan.
-- **Ready-made requests:** *Set up my Cardigan*, *Catch me up*, *Update my boards from today*, *Tidy a board* and
-  *Keep up*.
+  ask there is picked up within the hour. You change the days and hours in Cardigan, on Settings › AI. Scheduled tasks
+  need a paid Claude plan.
+- **Ready-made requests**, in the **/** menu of a chat and of Claude Code: *Set up my Cardigan*, *Catch me up*,
+  *Update my boards from today* and *Tidy a board*.
 
 ## Start from something specific
 
@@ -47,20 +48,20 @@ Say one of these to Claude, or your own. The ones that read your email or calend
 
 ## Nothing changes without you
 
-Everything Claude drafts is pending in Cardigan for your approval, unless you have let that kind of change go through on
-its own. You can take a whole round back later.
+Claude's drafts are pending in Cardigan for your approval, unless you have let that kind of change go through. You can
+take them back later.
 
 ## What it sends
 
 Claude reads your boards and sends its drafts to Cardigan at `app.getcardigan.com`, as you, through the connector you
-signed in with. Cardigan never sees your email, meetings or documents. Your AI reads those through its own
-connections. This package contains only instructions and the connector's address. It runs nothing on your computer.
+signed in with. Cardigan doesn't read your email, meetings or documents. Your AI reads them through its own
+connections, and Cardigan receives only the changes it drafts, with a short note on where each came from. This package contains only instructions and the connector's address. It runs nothing on your computer.
 
 ## Keep it current
 
-In the Claude desktop app, open **Customize**, then **Plugins**, and press **Check for updates**. Then click
-**Cardigan** and press **Update**. A grayed-out **Update** that says **On latest version** means you have the newest
-one. Do this now and then: the app does not update it by itself.
+With **Sync automatically** on, new versions arrive on their own, and Claude Code gets them at its next session.
+Without it, in the Claude desktop app, open **Customize**, then **Plugins**, and click **Cardigan**. Press **Update**,
+then start a new chat. A grayed-out **Update** that says **On latest version** means you have the newest one.
 
 In a terminal, Claude Code keeps the copy of this package you first installed. If a command such as `/cardigan:catch-me-up` isn't
 there, type `claude plugin update cardigan@cardigan` in a terminal, then start a new session. To get each new version
@@ -68,4 +69,5 @@ from then on, type `/plugin`, open **Marketplaces**, choose **cardigan**, then *
 
 ## Help
 
+Everything you can ask: <https://app.getcardigan.com/help/your-ai-and-cardigan>. Connecting:
 <https://app.getcardigan.com/help/connect-your-ai>
