@@ -21,8 +21,16 @@ description: Take a card in Cardigan and do the work it describes, then report o
    is what you read first then. A card with nothing written to it for the board's quiet time (30 minutes unless the
    board says otherwise) goes back to the person, and they are told. A card the person took back is theirs; do not take
    it again until they hand it over again.
-6. **Hand it on.** Move it to the column the board uses next (review, checking, done) and tag the person who takes it
-   next with their mention, `@[Name](u:id)` (ids from fetch `board:<id>`). A typed name tells no one.
+6. **Hand it back when the work is done.** Send `card.ai_handback` with the lease and a `summary` of one line for the
+   person: what is done and what waits on them. Cardigan ends your claim, moves the card to the board's review column (or
+   the next), puts the line in the comments and tells your person, who approves what waits, undoes the whole job or sends
+   it back with a note. A card sent back comes to you again in the handed cards with the note; read it first. Do not move
+   the card yourself, and write nothing more to it with that lease.
+7. **Say where each change came from.** Give every change in a round its `source`: `email`, `chat`, `crm`, `calendar`,
+   `file` or `web` when what led to it is outside Cardigan (an approval in an inbox, a message, a record), `person` for
+   your own person's words, `cardigan` for what is on the board. A change from outside content always waits for the
+   person, whatever their settings, because anyone can send them an email. So does a change with no `source`, while you
+   hold a card.
 
 ## When nobody asked
 
