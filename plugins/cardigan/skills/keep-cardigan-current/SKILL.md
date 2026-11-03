@@ -12,7 +12,8 @@ unless they have let that kind of change through.
 
 1. **Call where_things_stand with `focus: "asks"` and `scheduledRun`**, exactly as the task's instructions write it
    (`task` says which of Cardigan's own tasks wrote this one). It answers with `requests`, oldest first, and
-   `cardsForYou`: cards that reached the person since the last check. If Cardigan's tools are missing or ask you to
+   `cardsForYou`: cards that reached the person since the last check, and first of all `handedToYourAi`: cards the person
+   handed to their AI, with the job brief. If Cardigan's tools are missing or ask you to
    sign in, say "Cardigan is not connected, so I could not check." and that connecting this task's Cardigan in Claude
    again fixes it, and stop. Then:
    - **`outsideHours` or `paused`:** answer with its `closingLine` and call nothing else. An `outsideHours` answer can
@@ -20,16 +21,20 @@ unless they have let that kind of change through.
    - **`checkHours`:** change this task to those days and hours, if you can.
    - **`replaceTask`:** if you can, set this task's schedule and instructions to exactly its `schedule` and `prompt`,
      character for character, and say so in your last line.
-   - **`checkLimits`** repeats the QA limit below; it beats any board's instructions.
-2. **With nothing in either, and no catch-up asked for (step 5),** answer with its `closingLine` and nothing else.
+   - **`checkLimits`** repeats the QA limit below; it beats any board's instructions. With handed cards, `standing`
+     carries it in the same words.
+2. **With nothing in any of the three, and no catch-up asked for (step 6),** answer with its `closingLine` and nothing else.
 3. **Each request:** act on the person's newest words, draft the work, and answer with `ask.answer`, all in one round.
    If it is unclear, answer with one question and up to four `choices`; the answer comes at a later check.
-4. **Each card in `cardsForYou`** (`why` says who tagged, answered or sent it back): fetch it with `since` the day
+4. **Cards handed to you** (`handedToYourAi`; `jobRules`, `standing`, `about` and `boards` come once): work each as
+   `jobRules` say, oldest first, within this check's limits below. A card sent back carries the person's note in
+   `sentBack`; read it first. The person sees these as *Your AI at work* on Home.
+5. **Each card in `cardsForYou`** (`why` says who tagged, answered or sent it back): fetch it with `since` the day
    before its `at`. If it only tells the person something, leave it. Otherwise do what the limits below allow, in one
    comment under the one that asked.
-5. **Only if the task says to catch up as well:** draft one round from the person's meetings and email since the last
+6. **Only if the task says to catch up as well:** draft one round from the person's meetings and email since the last
    check, each change with its `why`, and nothing already pending.
-6. **End with one line:** requests answered, cards handled, whether you drafted changes.
+7. **End with one line:** requests answered, cards worked, cards handled, whether you drafted changes.
 
 ## What you may do on a card, on your own
 
