@@ -1,4 +1,5 @@
 ---
+name: catch-me-up
 description: "What changed on your Cardigan boards since your AI last looked, and what is pending."
 ---
 

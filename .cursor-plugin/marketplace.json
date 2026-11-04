@@ -1,0 +1,12 @@
+{
+  "name": "cardigan",
+  "owner": {
+    "name": "Cardigan"
+  },
+  "plugins": [
+    {
+      "name": "cardigan",
+      "source": "plugins/cardigan"
+    }
+  ]
+}

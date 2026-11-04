@@ -1,4 +1,5 @@
 ---
+name: tidy-board
 description: "Tidy a board: your AI drafts changes for overdue cards, unassigned cards and stalled work."
 argument-hint: "[board name]"
 ---

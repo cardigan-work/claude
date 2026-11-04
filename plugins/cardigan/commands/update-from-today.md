@@ -1,4 +1,5 @@
 ---
+name: update-from-today
 description: "Update your Cardigan boards from today's meetings, email and notes. You approve each change."
 ---
 

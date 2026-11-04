@@ -1,0 +1,13 @@
+{
+  "name": "cardigan",
+  "author": {
+    "name": "Cardigan"
+  },
+  "homepage": "https://getcardigan.com",
+  "license": "MIT",
+  "mcpServers": {
+    "cardigan": {
+      "url": "https://app.getcardigan.com/api/v1/mcp"
+    }
+  }
+}
