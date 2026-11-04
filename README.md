@@ -1,10 +1,12 @@
-# Cardigan for Claude
+# Cardigan for Claude and Grok
 
-The Cardigan package for Claude: the Cardigan connector together with Cardigan's own guides for Claude. It gives
-Claude your boards, teaches it to draft updates for you to approve, and lets it keep your boards current on a
-schedule.
+The Cardigan package: the Cardigan connector together with Cardigan's own guides. It gives your AI your boards,
+teaches it to draft updates for you to approve, and lets it keep your boards current on a schedule. It works in
+Claude and in Grok.
 
 ## Add it
+
+### In Claude
 
 1. In Claude, open **Customize › Plugins › Add › Add marketplace**, paste this repository's address, and turn on
    **Sync automatically**, so each new version reaches you by itself.
@@ -16,6 +18,19 @@ In Claude Code: `/plugin marketplace add cardigan-work/claude`, then `/plugin in
 connection asks you to sign in once: type `/mcp`, choose *cardigan*, then *Authenticate*.
 
 Then, in a new chat, say *Set up my Cardigan*, or type `/cardigan:start`.
+
+### In Grok
+
+Grok reads the guides from one skill file instead of the package.
+
+1. Download `one-file/cardigan/SKILL.md` from this repository. It holds every guide in one file.
+2. In a Grok chat, add the file as a skill.
+3. In a Grok Bot, ask the bot to save the file's text as a private skill.
+4. Connect Cardigan to Grok: [Connect your AI, In Grok](https://app.getcardigan.com/help/connect-your-ai#in-grok).
+
+Then say *Set up my Cardigan*.
+
+To keep your boards current on a schedule, ask Grok to set up Cardigan's hourly check: an Automation in a chat, or a routine in a Bot. All your Grok Bots count as one AI to Cardigan, with one lead and one hourly check.
 
 ## Keep it current
 

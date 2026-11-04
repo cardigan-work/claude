@@ -12,7 +12,7 @@ Set up one scheduled task, so what the person asks in Cardigan is picked up with
 - You will also work cards a teammate tagged them on, within fixed limits, and tag them for decisions about what to
   build, change or drop, and for anything a client will see.
 - Nothing changes on a board until they approve it, unless they have let that kind of change through.
-- Each check uses a little of their Claude plan, and scheduled tasks need a paid plan.
+- Each check uses a little of their AI plan. Claude’s scheduled tasks need a paid plan.
 
 **Cardigan makes the task, so you make none of it.** Call where_things_stand with `focus: "hourly check"`. Its
 `setUpCheck.task` is the whole task: `name`, `schedule` and `prompt`, built from the person's days and hours on
@@ -30,9 +30,11 @@ back on as it was.
   up from my meetings and email once a day".
 - **Model and permissions:** a lighter model if offered; keep working without stopping, since Cardigan holds changes
   for approval unless the person has let a kind through.
-- **Connectors:** Cardigan, plus their email and calendar only for the daily catch-up. Claude may list Cardigan twice,
+- **Connectors:** Cardigan, plus their email and calendar only for the daily catch-up. The connector list may show Cardigan twice,
   from the address they added and from this package. Use the connected entry; if the other is not connected, tell them
   to connect it too, since it joins the same connection.
+
+**In Grok,** a scheduled task is an Automation in a Grok chat or a routine in a Grok Bot. Set it up the same way.
 
 Show them the task before it is saved. Then say `setUpCheck.say`, word for word: it gives their days and hours and
 points to Settings › AI.

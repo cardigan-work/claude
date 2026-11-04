@@ -14,7 +14,7 @@ unless they have let that kind of change through.
    (`task` says which of Cardigan's own tasks wrote this one). It answers with `requests`, oldest first, and
    `cardsForYou`: cards that reached the person since the last check, and first of all `handedToYourAi`: cards the person
    handed to their AI, with the job brief. If Cardigan's tools are missing or ask you to
-   sign in, say "Cardigan is not connected, so I could not check." and that connecting this task's Cardigan in Claude
+   sign in, say "Cardigan is not connected, so I could not check." and that connecting this task's Cardigan
    again fixes it, and stop. Then:
    - **`outsideHours` or `paused`:** answer with its `closingLine` and call nothing else. An `outsideHours` answer can
      carry `replaceTask` (an old task): apply that first.
