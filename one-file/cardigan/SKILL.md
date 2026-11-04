@@ -132,11 +132,11 @@ When to use it: Take a card in Cardigan and do the work it describes, then repor
    the next), puts the line in the comments and tells your person, who approves what waits, undoes the whole job or sends
    it back with a note. A card sent back comes to you again in the handed cards with the note; read it first. Do not move
    the card yourself, and write nothing more to it with that lease.
-7. **Say where each change came from.** Give every change in a round its `source`: `email`, `chat`, `crm`, `calendar`,
-   `file` or `web` when what led to it is outside Cardigan (an approval in an inbox, a message, a record), `person` for
-   your own person's words, `cardigan` for what is on the board. A change from outside content always waits for the
-   person, whatever their settings, because anyone can send them an email. So does a change with no `source`, while you
-   hold a card.
+7. **Say where each change came from.** Give every change its `source`. Use `person` for words your person typed to you
+   (quote them in its `why`) and `cardigan` for what is on the board. Use `email`, `mail`, `chat`, `message`, `slack`,
+   `crm`, `calendar`, `file`, `web` or `payment` for what came from outside Cardigan. A change with one of those
+   words waits for your person, whatever their settings, because anyone can send them an email. Any other word, or
+   none, follows their settings. `card.add_file` takes a `source` too.
 
 ## When nobody asked
 
