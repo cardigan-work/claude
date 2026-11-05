@@ -21,12 +21,13 @@ Then, in a new chat, say *Set up my Cardigan*, or type `/cardigan:start`.
 
 ### In Grok
 
-Grok reads the guides from one skill file instead of the package.
+Grok reads the guides through the connection, so there is nothing to install. Connect Cardigan to Grok: [Connect your AI, In Grok](https://app.getcardigan.com/help/connect-your-ai#in-grok).
+
+To keep the guides in Grok anyway, use the skill file:
 
 1. Download `one-file/cardigan/SKILL.md` from this repository. It holds every guide in one file.
 2. In a Grok chat, add the file as a skill.
 3. In a Grok Bot, ask the bot to save the file's text as a private skill.
-4. Connect Cardigan to Grok: [Connect your AI, In Grok](https://app.getcardigan.com/help/connect-your-ai#in-grok).
 
 Then say *Set up my Cardigan*.
 

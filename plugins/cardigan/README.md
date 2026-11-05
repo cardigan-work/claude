@@ -48,8 +48,8 @@ Say one of these to Claude, or your own. The ones that read your email or calend
 
 ## In Grok
 
-Grok reads the same guides from one skill file, `one-file/cardigan/SKILL.md`. The steps to add it are in the
-[repository's README](../../README.md#in-grok).
+Grok reads the same guides through the connection, so there is nothing to install. To keep them in Grok anyway, the
+steps to add the skill file `one-file/cardigan/SKILL.md` are in the [repository's README](../../README.md#in-grok).
 
 ## Nothing changes without you
 
