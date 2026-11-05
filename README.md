@@ -31,7 +31,7 @@ To keep the guides in Grok anyway, use the skill file:
 
 Then say *Set up my Cardigan*.
 
-To keep your boards current on a schedule, ask Grok to set up Cardigan's hourly check: an Automation in a chat, or a routine in a Bot. All your Grok Bots count as one AI to Cardigan, with one lead and one hourly check.
+To keep your boards current on a schedule, ask Grok to set up Cardigan's hourly check: an Automation in a chat, or a routine in a Bot. Cardigan tells your Grok Bots apart by the name each gives itself, so each can lead. They share one hourly check.
 
 ## Keep it current
 
