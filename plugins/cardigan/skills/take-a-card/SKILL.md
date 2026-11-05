@@ -1,7 +1,9 @@
 ---
 name: take-a-card
-description: Take a card in Cardigan and do the work it describes, then report on it and hand it on. Use when the person says to take, do, work on or pick up a card by its number, link or title, when where_things_stand lists cards handed to your AI, or when a card that tags them asks for work you can do.
+description: "Take a card in Cardigan and do the work it describes, then report on it and hand it on. Use when the person says to take, do, work on or pick up a card by its number, link or title, when where_things_stand lists cards handed to your AI, or when a card that tags them asks for work you can do."
 ---
+
+<!-- Written by npm run plugin:build from app/lib/mcp/guides/take-a-card.ts. Edit the guide there. -->
 
 # Take a card and do it
 
@@ -36,5 +38,7 @@ description: Take a card in Cardigan and do the work it describes, then report o
 ## When nobody asked
 
 A card that reached the person (a tag, a card sent back) while nobody is watching is worked within Cardigan's limits
-for every team, in the keep-cardigan-current skill. In a chat, the person decides. Every word you write goes on the
+for every team, in guide:keep-cardigan-current. In a chat, the person decides. Every word you write goes on the
 card, marked as yours, and can be undone.
+
+<!-- guide version 9357553755 -->

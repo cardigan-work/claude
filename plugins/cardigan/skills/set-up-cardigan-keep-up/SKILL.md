@@ -1,7 +1,9 @@
 ---
 name: set-up-cardigan-keep-up
-description: Set up a scheduled task that keeps the person's Cardigan up to date on its own, checking every hour on their days and hours. Use when the person asks you to keep Cardigan up to date, check Cardigan regularly or every hour, work on Cardigan without being reminded, or keep up on its own, or says yes when you offer the hourly check.
+description: "Set up a scheduled task that keeps the person's Cardigan up to date on its own, checking every hour on their days and hours. Use when the person asks you to keep Cardigan up to date, check Cardigan regularly or every hour, work on Cardigan without being reminded, or keep up on its own, or says yes when you offer the hourly check."
 ---
+
+<!-- Written by npm run plugin:build from app/lib/mcp/guides/set-up-cardigan-keep-up.ts. Edit the guide there. -->
 
 # Set up Cardigan to keep up on its own
 
@@ -31,7 +33,7 @@ back on as it was.
 - **Model and permissions:** a lighter model if offered; keep working without stopping, since Cardigan holds changes
   for approval unless the person has let a kind through.
 - **Connectors:** Cardigan, plus their email and calendar only for the daily catch-up. The connector list may show Cardigan twice,
-  from the address they added and from this package. Use the connected entry; if the other is not connected, tell them
+  from the address they added and from the package. Use the connected entry; if the other is not connected, tell them
   to connect it too, since it joins the same connection.
 
 **In Grok,** a scheduled task is an Automation in a Grok chat or a routine in a Grok Bot. Set it up the same way.
@@ -41,3 +43,5 @@ points to Settings › AI.
 
 **If scheduled tasks are not offered here,** say so, and suggest "Update my boards from today" after a meeting or
 email, or "Catch me up on Cardigan" whenever they like.
+
+<!-- guide version 1b7d5cbe7e -->

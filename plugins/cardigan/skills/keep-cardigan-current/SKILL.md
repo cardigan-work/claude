@@ -1,7 +1,9 @@
 ---
 name: keep-cardigan-current
-description: One scheduled check of Cardigan, run by a task the person set up to keep Cardigan current. Use when a scheduled task or the person asks you to check Cardigan, keep Cardigan up to date, or work through what is waiting in Cardigan.
+description: "One scheduled check of Cardigan, run by a task the person set up to keep Cardigan current. Use when a scheduled task or the person asks you to check Cardigan, keep Cardigan up to date, or work through what is waiting in Cardigan."
 ---
+
+<!-- Written by npm run plugin:build from app/lib/mcp/guides/keep-cardigan-current.ts. Edit the guide there. -->
 
 # Keep Cardigan current: one check
 
@@ -62,3 +64,5 @@ never quiet: say what you could not check. The person's own way of being answere
 
 Draft what nobody asked for or a change a person made; send a refused round again unchanged; close a request you have
 not answered; ask a question in the chat, since nobody is there.
+
+<!-- guide version bc95daf114 -->

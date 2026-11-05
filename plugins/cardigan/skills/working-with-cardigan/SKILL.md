@@ -1,7 +1,9 @@
 ---
 name: working-with-cardigan
-description: How to read and update Cardigan boards for the person through the Cardigan connector. Use whenever the person mentions Cardigan, their boards, cards, projects or to-dos, asks what changed, what is due or what is pending, or asks you to add, move, update or tidy work in Cardigan.
+description: "How to read and update Cardigan boards for the person through the Cardigan connector. Use whenever the person mentions Cardigan, their boards, cards, projects or to-dos, asks what changed, what is due or what is pending, or asks you to add, move, update or tidy work in Cardigan."
 ---
+
+<!-- Written by npm run plugin:build from app/lib/mcp/guides/working-with-cardigan.ts. Edit the guide there. -->
 
 # Working with Cardigan
 
@@ -63,12 +65,13 @@ from today'."
 
 ## More
 
-- Taking a card and doing its work: the take-a-card skill.
-- A board someone outside the team sees, Team only cards, and files: the sharing-and-files skill.
-- The hourly check, and what a teammate's AI may do on its own: the keep-cardigan-current skill. Setting it up: the
-  set-up-cardigan-keep-up skill.
+- Taking a card and doing its work: guide:take-a-card.
+- A board someone outside the team sees, Team only cards, and files: guide:sharing-and-files.
+- The hourly check, and what a teammate's AI may do on its own: guide:keep-cardigan-current. Setting it up: guide:set-up-cardigan-keep-up.
 - Their first boards: the start skill. where_things_stand says `noBoardsYet` while they have none of their own.
 - Feedback to the Cardigan team: `feedback.send` alone in a round (`kind`: idea, improvement, bug or question; `text`
   in their words; `page`). It goes at once. Replies come to their Cardigan notifications.
 - Inviting a friend: their link is on Settings › Invite a friend. Write the message for them to send; Cardigan never
   sends it.
+
+<!-- guide version 2d32890690 -->
