@@ -72,39 +72,39 @@ from today'."
 - Taking a card and doing its work: guide:take-a-card.
 - A board someone outside the team sees, Team only cards, and files: guide:sharing-and-files.
 - The hourly check, and what a teammate's AI may do on its own: guide:keep-cardigan-current. Setting it up: guide:set-up-cardigan-keep-up.
-- Their first boards: the start skill. where_things_stand says `noBoardsYet` while they have none of their own.
+- Their first boards: guide:start. where_things_stand says `noBoardsYet` while they have none of their own.
 - When the person asks you to test their Cardigan connection: fetch `connection`. It says which workspaces this connection reaches and what to fix; tell them in a line or two.
 - Feedback to the Cardigan team: `feedback.send` alone in a round (`kind`: idea, improvement, bug or question; `text`
   in their words; `page`). It goes at once. Replies come to their Cardigan notifications.
 - Inviting a friend: their link is on Settings › Invite a friend. Write the message for them to send; Cardigan never
   sends it.
 
-<!-- guide version cf1a69ad86 -->
+<!-- guide version aa1bcdb59b -->
 
-# The start skill
+# guide:start
 
 When to use it: Your first boards in Cardigan, from your email, calendar or what you tell your AI, for you to look over and approve. Use when the person says “Set up my Cardigan”, asks to set up Cardigan or their first boards, or has no board of their own in Cardigan yet.
 
-# Set up my Cardigan
-
-The person's request, in their words:
-
 Set up my Cardigan: my first boards, from my own work. Show me what you find before you draft anything.
 
-Look at my boards first with where_things_stand. Boards marked practice are in my sample workspace, made-up work and not mine: leave them out, and never put my work there.
+# Setting up the first boards
 
-1. Offer me what to read: my email and calendar from the last two weeks, up to yesterday; my calendar only; or what I tell you. Offer email and calendar only if you can read them through your own connections; if you cannot, ask me in a few words what I am working on, who with, and what is due soon. Say: "Cardigan doesn't read your email. Your AI reads it, and sends Cardigan only the changes it drafts."
-2. Then write "Or start from something specific. For example:" and offer up to five of the examples below that fit my kind of work, always with "Turn the plan we made in this chat into a board". Offer one that needs email or a calendar only if you can read it. If I already said what I want, or pasted notes, a transcript, a file or another tool's export, start from that instead.
-3. Read only what I chose, up to yesterday, so today's news can be my first update. Show me what you found, grouped Sure and Not sure, and the shape you suggest: one board per client or strand of work, so each can be shown to its own people alone. Ask at most three questions, only about the gaps, and ask: "Who needs to see where each one stands?"
-4. Then draft it as one new workspace of my own: propose_additions with workspace.create, alone in its draft, then propose_additions with board.from_file for each board, one board a draft, with the workspaceId it gave back (fetch "kinds:<board id>" on any board gives a board file's shape). Give each card a why: where it came from, in a few words ("Jordan's email, Oct 3"). Give the draft a next: my next real meeting or email, from my calendar ("your 3 pm call with Jordan"). Give workspace.create a from that finishes "Your AI drafted a board from": what you read, in a few words ("14 emails and 6 meetings"). If someone outside my team should see a board, a client say, note who and share nothing yet. In that board, set teamOnly: true on the cards about them they should not read, such as a reminder to send them a status note, and write its other cards for them. Once I have looked my boards over, I may ask you to share one: propose_changes with board.share_client, which needs my approval in Cardigan on its own.
-5. End with: "Look them over in Cardigan; nothing is on a board until you approve it." Then name that moment: "After your 3 pm call with Jordan, say 'Update my boards from today'." If you cannot read my email, say instead: "After your 3 pm call, tell me in a sentence what changed."
+Look at the person's boards first with where_things_stand. Boards marked practice are in their sample workspace, made-up work and not theirs: leave them out, and never put their work there.
 
-Work cheaply: every answer comes out of my own AI plan, so read only what you need.
+1. Offer them what to read: their email and calendar from the last two weeks, up to yesterday; their calendar only; or what they tell you. Offer email and calendar only if you can read them through your own connections; if you cannot, ask them in a few words what they are working on, who with, and what is due soon. Say: "Cardigan doesn't read your email. Your AI reads it, and sends Cardigan only the changes it drafts."
+2. Then write "Or start from something specific. For example:" and offer up to five of the examples below that fit their kind of work, always with "Turn the plan we made in this chat into a board". Offer one that needs email or a calendar only if you can read it. If they already said what they want, or pasted notes, a transcript, a file or another tool's export, start from that instead.
+3. Read only what they chose, up to yesterday, so today's news can be their first update. Show them what you found, grouped Sure and Not sure, and the shape you suggest: one board per client or strand of work, so each can be shown to its own people alone. Ask at most three questions, only about the gaps, and ask: "Who needs to see where each one stands?"
+4. Then draft it as one new workspace of their own: propose_additions with workspace.create, alone in its draft, then propose_additions with board.from_file for each board, one board a draft, with the workspaceId it gave back (fetch "kinds:<board id>" on any board gives a board file's shape). Give each card a why: where it came from, in a few words ("Jordan's email, Oct 3"). Give the draft a next: their next real meeting or email, from their calendar ("your 3 pm call with Jordan"). Give workspace.create a from that finishes "Your AI drafted a board from": what you read, in a few words ("14 emails and 6 meetings"). If someone outside their team should see a board, a client say, note who and share nothing yet. In that board, set teamOnly: true on the cards about them they should not read, such as a reminder to send them a status note, and write its other cards for them. Once they have looked their boards over, they may ask you to share one: propose_changes with board.share_client, which needs their approval in Cardigan on its own.
+5. End with: "Look them over in Cardigan; nothing is on a board until you approve it." Then name that moment: "After your 3 pm call with Jordan, say 'Update my boards from today'." If you cannot read their email, say instead: "After your 3 pm call, tell me in a sentence what changed."
+
+Work cheaply: every answer comes out of the person's own AI plan, so read only what you need.
 
 The examples, by kind of work:
 For a consultant: “A board for each client from my last two weeks of email” (needs email) · “Set up my week from my calendar” (needs calendar) · “Pull the to-dos out of this call transcript” · “Make a board from this proposal: every deliverable with its date” · “Track what each client is waiting on from me” (needs email)
 For a founder: “My fundraise from investor emails: who’s at which stage” (needs email) · “A launch plan from this product doc” · “Bring over my Trello export and tidy it” · “What my cofounder and I agreed this week, from email and our calendar” (needs email) · “What I promised investors in last month’s update, as cards” (needs email) · “Hiring from my calendar invites and the recruiter’s emails” (needs email) · “A board from these meeting notes” · “Everything due before our board meeting, from my calendar” (needs calendar)
 For anyone: “Turn the plan we made in this chat into a board”
+
+<!-- guide version c51aa38f02 -->
 
 # guide:take-a-card
 
@@ -127,8 +127,8 @@ When to use it: Take a card in Cardigan and do the work it describes, then repor
    anything they must decide. Steps someone must check go on the card as a checklist (`checklist.create`).
 5. **End the visit.** Write `card.ai_handoff` (done, open, next, learned): it parks the card until your next visit and
    is what you read first then. A card with nothing written to it for the board's quiet time (30 minutes unless the
-   board says otherwise) goes back to the person, and they are told. A card the person took back is theirs; do not take
-   it again until they hand it over again.
+   board says otherwise) stays yours, and your person is told how long since you last wrote. A card the person took
+   back is theirs; do not take it again until they hand it over again.
 6. **Hand it back when the work is done.** Send `card.ai_handback` with the lease and a `summary` of one line for the
    person: what is done and what waits on them. Cardigan ends your claim, moves the card to the board's review column (or
    the next), puts the line in the comments and tells your person, who approves what waits, undoes the whole job or sends
@@ -140,13 +140,17 @@ When to use it: Take a card in Cardigan and do the work it describes, then repor
    words waits for your person, whatever their settings, because anyone can send them an email. Any other word, or
    none, follows their settings. `card.add_file` takes a `source` too.
 
+## Name your session
+
+In a session your person can hand cards to, send the same `agent` name on every call while it runs, such as "Q4 budget review". A scheduled check sends none. A card handed to your session comes in `handedToYourAi`; a new session takes it after an hour.
+
 ## When nobody asked
 
 A card that reached the person (a tag, a card sent back) while nobody is watching is worked within Cardigan's limits
 for every team, in guide:keep-cardigan-current. In a chat, the person decides. Every word you write goes on the
 card, marked as yours, and can be undone.
 
-<!-- guide version 9357553755 -->
+<!-- guide version 582fa9feec -->
 
 # guide:sharing-and-files
 

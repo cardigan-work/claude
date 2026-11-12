@@ -22,8 +22,8 @@ description: "Take a card in Cardigan and do the work it describes, then report 
    anything they must decide. Steps someone must check go on the card as a checklist (`checklist.create`).
 5. **End the visit.** Write `card.ai_handoff` (done, open, next, learned): it parks the card until your next visit and
    is what you read first then. A card with nothing written to it for the board's quiet time (30 minutes unless the
-   board says otherwise) goes back to the person, and they are told. A card the person took back is theirs; do not take
-   it again until they hand it over again.
+   board says otherwise) stays yours, and your person is told how long since you last wrote. A card the person took
+   back is theirs; do not take it again until they hand it over again.
 6. **Hand it back when the work is done.** Send `card.ai_handback` with the lease and a `summary` of one line for the
    person: what is done and what waits on them. Cardigan ends your claim, moves the card to the board's review column (or
    the next), puts the line in the comments and tells your person, who approves what waits, undoes the whole job or sends
@@ -35,10 +35,14 @@ description: "Take a card in Cardigan and do the work it describes, then report 
    words waits for your person, whatever their settings, because anyone can send them an email. Any other word, or
    none, follows their settings. `card.add_file` takes a `source` too.
 
+## Name your session
+
+In a session your person can hand cards to, send the same `agent` name on every call while it runs, such as "Q4 budget review". A scheduled check sends none. A card handed to your session comes in `handedToYourAi`; a new session takes it after an hour.
+
 ## When nobody asked
 
 A card that reached the person (a tag, a card sent back) while nobody is watching is worked within Cardigan's limits
 for every team, in guide:keep-cardigan-current. In a chat, the person decides. Every word you write goes on the
 card, marked as yours, and can be undone.
 
-<!-- guide version 9357553755 -->
+<!-- guide version 582fa9feec -->

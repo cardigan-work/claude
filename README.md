@@ -1,8 +1,7 @@
 # Cardigan for Claude and Grok
 
-The Cardigan package: the Cardigan connector together with Cardigan's own guides. It gives your AI your boards,
-teaches it to draft updates for you to approve, and lets it keep your boards current on a schedule. It works in
-Claude and in Grok.
+The Cardigan package: Cardigan's own guides, for use with the Cardigan connector. It teaches your AI to draft updates
+for you to approve, and lets it keep your boards current on a schedule. It works in Claude and in Grok.
 
 ## Add it
 
@@ -11,11 +10,11 @@ Claude and in Grok.
 1. In Claude, open **Customize › Plugins › Add › Add marketplace**, paste this repository's address, and turn on
    **Sync automatically**, so each new version reaches you by itself.
 2. Open **Discover**, find **Cardigan** under New plugins, and press **+** to install it.
-3. Connect *Cardigan* under the package's Connectors and sign in. Already connected to Cardigan with its address?
-   Connect this one as well: it joins the same connection, and a scheduled task may use either one.
+3. Not connected to Cardigan yet? Connect *Cardigan* under Claude's Connectors and sign in.
 
-In Claude Code: `/plugin marketplace add cardigan-work/claude`, then `/plugin install cardigan@cardigan`. The package's
-connection asks you to sign in once: type `/mcp`, choose *cardigan*, then *Authenticate*.
+In Claude Code: `/plugin marketplace add cardigan-work/claude`, then `/plugin install cardigan@cardigan`. To connect,
+type `claude mcp add --transport http cardigan https://app.getcardigan.com/api/v1/mcp`, then `/mcp`, choose
+*cardigan*, then *Authenticate*.
 
 Then, in a new chat, say *Set up my Cardigan*, or type `/cardigan:start`.
 

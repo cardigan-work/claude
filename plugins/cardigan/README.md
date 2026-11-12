@@ -1,17 +1,15 @@
 # Cardigan for Claude and Grok
 
 Cardigan keeps your boards current from your own work. Your AI drafts the changes, you approve them, and the people
-you share with see where things stand. This package connects it to your Cardigan account and teaches it how to
-work with Cardigan well.
+you share with see where things stand. This package teaches it how to work with Cardigan well.
 
 ## What it does
 
 - **Sets up your first boards from your own work.** In a new chat, say *Set up my Cardigan*. Claude offers to read your
   email and calendar from the last two weeks, your calendar only, or what you tell it. It shows you what it found,
   asks a few questions about the gaps, and lays out a board for each client or line of work for you to approve.
-- **Connects Claude to Cardigan.** Connect *Cardigan* on the package's Connectors tab and sign in to your Cardigan
-  account. Already connected with Cardigan's address? Connect the package's entry as well: it joins the same
-  connection, and a scheduled task may use either one. There is no key or password to copy.
+- **Works with your connection to Cardigan.** Connect *Cardigan* under Claude's Connectors and sign in to your Cardigan
+  account. There is no key or password to copy.
 - **Teaches Claude how Cardigan works.** It learns to catch you up, draft changes for your approval, answer your
   requests, take a card and do its work, and share a board or add a file. Each guide loads only for its own job, so it
   uses little of your plan.

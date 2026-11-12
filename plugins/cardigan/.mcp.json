@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "cardigan": {
-      "type": "http",
-      "url": "https://app.getcardigan.com/api/v1/mcp"
-    }
-  }
-}
