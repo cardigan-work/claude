@@ -126,8 +126,8 @@ When to use it: Take a card in Cardigan and do the work it describes, then repor
 4. **Report on the card.** One comment for whoever reads it next, in everyday words: what was done, what is not, and
    anything they must decide. Steps someone must check go on the card as a checklist (`checklist.create`).
 5. **End the visit.** Write `card.ai_handoff` (done, open, next, learned): it parks the card until your next visit and
-   is what you read first then. A card with nothing written to it for the board's quiet time (30 minutes unless the
-   board says otherwise) stays yours, and your person is told how long since you last wrote. A card the person took
+   is what you read first then. A card left unwritten past the claim's `noUpdateAfter` (in your person's check hours)
+   stays yours, and says how long since you last wrote. A card the person took
    back is theirs; do not take it again until they hand it over again.
 6. **Hand it back when the work is done.** Send `card.ai_handback` with the lease and a `summary` of one line for the
    person: what is done and what waits on them. Cardigan ends your claim, moves the card to the board's review column (or
@@ -150,7 +150,7 @@ A card that reached the person (a tag, a card sent back) while nobody is watchin
 for every team, in guide:keep-cardigan-current. In a chat, the person decides. Every word you write goes on the
 card, marked as yours, and can be undone.
 
-<!-- guide version 582fa9feec -->
+<!-- guide version 8f8f2587d9 -->
 
 # guide:sharing-and-files
 
