@@ -5,7 +5,7 @@ description: "Your first boards in Cardigan, from your email, calendar or what y
 
 <!-- Written by npm run plugin:build from app/lib/mcp/guides/start.ts. Edit the guide there. -->
 
-Set up my Cardigan: my first boards, from my own work. Show me what you find before you draft anything.
+Set up my Cardigan: my first boards, from my own work. Use the Cardigan connector. Show me what you find before you draft anything.
 
 # Setting up the first boards
 
