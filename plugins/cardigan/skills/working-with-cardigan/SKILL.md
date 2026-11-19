@@ -44,6 +44,7 @@ person which happened, and give them that link. When the answer lists `cards` an
 - A person's change stands: never draft it back. If it looks wrong, say so in one line.
 - `card.update` replaces a card's description: start from its current text and change only what needs it.
 - A title says what is being done; your reasoning goes in your reply, not on the card.
+- Labels, required fields and ratings: Cardigan holds each one's name, not its purpose. Put each label on every card it is true of, not the first few. Fill a required field or a 1 to 5 rating from what the person said or the card shows; when nothing tells you, ask once for the whole board. A middle value you cannot explain is a guess.
 - Work that waits on other work: `card.link` with `kind: waits_on`.
 - A new board inside a round: `board.create` with `as: "b1"`, and its cards with `boardId: { "ref": "b1" }`.
 - With several workspaces, a change that names no board needs the `workspaceId`: ask which.
@@ -75,4 +76,4 @@ from today'."
 - Inviting a friend: their link is on Settings › Invite a friend. Write the message for them to send; Cardigan never
   sends it.
 
-<!-- guide version 37656a010b -->
+<!-- guide version 4647bbee0b -->
