@@ -20,29 +20,9 @@ you share with see where things stand. This package teaches it how to work with 
 - **Ready-made requests**, in the **/** menu of a chat and of Claude Code: *Set up my Cardigan*, *Catch me up*,
   *Update my boards from today* and *Tidy a board*.
 
-## Start from something specific
+## Set up in one chat
 
-Say one of these to Claude, or your own. The ones that read your email or calendar need Claude connected to them.
-
-<!-- Examples: written by npm run plugin:build from app/lib/mcp/startGuide.ts. Edit them there. -->
-- **For a consultant**
-  - *A board for each client from my last two weeks of email* (reads your email)
-  - *Set up my week from my calendar* (reads your calendar)
-  - *Pull the to-dos out of this call transcript*
-  - *Make a board from this proposal: every deliverable with its date*
-  - *Track what each client is waiting on from me* (reads your email)
-- **For a founder**
-  - *My fundraise from investor emails: who’s at which stage* (reads your email)
-  - *A launch plan from this product doc*
-  - *Bring over my Trello export and tidy it*
-  - *What my cofounder and I agreed this week, from email and our calendar* (reads your email)
-  - *What I promised investors in last month’s update, as cards* (reads your email)
-  - *Hiring from my calendar invites and the recruiter’s emails* (reads your email)
-  - *A board from these meeting notes*
-  - *Everything due before our board meeting, from my calendar* (reads your calendar)
-- **For anyone**
-  - *Turn the plan we made in this chat into a board*
-<!-- End of the examples. -->
+Say *Set up my Cardigan* to Claude. It runs one chat of about five minutes, asks one round of questions, and sends Cardigan everything at once for you to approve in one visit.
 
 ## In Grok
 
