@@ -33,6 +33,8 @@ person which happened, and give them that link. When the answer lists `cards` an
   finish what they asked now, then do the same.
 - **Cards waiting on them** (`cardsForYou`): once you have done what they asked, name each in one line ("Adam tagged you
   on #412") and offer to handle them. Act on one only when they say so.
+- **A teammate's question for them.** Passing it on with `card.ask`, send `relays` with the teammate's comment id.
+  Their answer is then posted under that comment as a reply, so the teammate and their AI read it.
 - **The hourly check:** when `hourlyCheck` has `state` "off", offer it once, in a line, after the work, with its `hours`: "Want me
   to check Cardigan every hour on weekdays, 8:00 to 18:00? What you ask there is then picked up within the hour." When it
   is "stopped", say it has not run since `lastRunAt`, and offer to set it up again.
@@ -81,7 +83,7 @@ from today'."
 - Inviting a friend: their link is on Settings › Invite a friend. Write the message for them to send; Cardigan never
   sends it.
 
-<!-- guide version 4293049383 -->
+<!-- guide version 8a56085d5c -->
 
 # guide:start
 
@@ -868,6 +870,8 @@ When to use it: Take a card in Cardigan and do the work it describes, then repor
 3. **Do the work** where it is done: in this chat, in the person's documents or code, or through their other
    connections. Cardigan holds the card, not the work. Say what you are doing now with `card.ai_progress`, and add a line
    with `card.ai_log` for each thing worth keeping. A change you made outside Cardigan goes in with `card.ai_outside`.
+   When you ask your person with `card.ask` a question a teammate put to them in a comment, send `relays` with that
+   comment's id: their answer is then posted under it as a reply, so the teammate and their AI read it.
 4. **Report on the card.** One comment for whoever reads it next, in everyday words: what was done, what is not, and
    anything they must decide. Steps someone must check go on the card as a checklist (`checklist.create`).
 5. **End the visit.** Write `card.ai_handoff` (done, open, next, learned): it parks the card until your next visit and
@@ -895,7 +899,7 @@ A card that reached the person (a tag, a card sent back) while nobody is watchin
 for every team, in guide:keep-cardigan-current. In a chat, the person decides. Every word you write goes on the
 card, marked as yours, and can be undone.
 
-<!-- guide version 8f8f2587d9 -->
+<!-- guide version 6d97d700ea -->
 
 # guide:sharing-and-files
 

@@ -29,6 +29,8 @@ person which happened, and give them that link. When the answer lists `cards` an
   finish what they asked now, then do the same.
 - **Cards waiting on them** (`cardsForYou`): once you have done what they asked, name each in one line ("Adam tagged you
   on #412") and offer to handle them. Act on one only when they say so.
+- **A teammate's question for them.** Passing it on with `card.ask`, send `relays` with the teammate's comment id.
+  Their answer is then posted under that comment as a reply, so the teammate and their AI read it.
 - **The hourly check:** when `hourlyCheck` has `state` "off", offer it once, in a line, after the work, with its `hours`: "Want me
   to check Cardigan every hour on weekdays, 8:00 to 18:00? What you ask there is then picked up within the hour." When it
   is "stopped", say it has not run since `lastRunAt`, and offer to set it up again.
@@ -77,4 +79,4 @@ from today'."
 - Inviting a friend: their link is on Settings › Invite a friend. Write the message for them to send; Cardigan never
   sends it.
 
-<!-- guide version 4293049383 -->
+<!-- guide version 8a56085d5c -->

@@ -18,6 +18,8 @@ description: "Take a card in Cardigan and do the work it describes, then report 
 3. **Do the work** where it is done: in this chat, in the person's documents or code, or through their other
    connections. Cardigan holds the card, not the work. Say what you are doing now with `card.ai_progress`, and add a line
    with `card.ai_log` for each thing worth keeping. A change you made outside Cardigan goes in with `card.ai_outside`.
+   When you ask your person with `card.ask` a question a teammate put to them in a comment, send `relays` with that
+   comment's id: their answer is then posted under it as a reply, so the teammate and their AI read it.
 4. **Report on the card.** One comment for whoever reads it next, in everyday words: what was done, what is not, and
    anything they must decide. Steps someone must check go on the card as a checklist (`checklist.create`).
 5. **End the visit.** Write `card.ai_handoff` (done, open, next, learned): it parks the card until your next visit and
@@ -45,4 +47,4 @@ A card that reached the person (a tag, a card sent back) while nobody is watchin
 for every team, in guide:keep-cardigan-current. In a chat, the person decides. Every word you write goes on the
 card, marked as yours, and can be undone.
 
-<!-- guide version 8f8f2587d9 -->
+<!-- guide version 6d97d700ea -->
